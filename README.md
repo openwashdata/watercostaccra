@@ -10,7 +10,14 @@
 
 <!-- badges: end -->
 
-The goal of watercostaccra is to …
+The goal of watercostaccra is to provide users with documentation on two
+surveys on household water costs, coping mechanisms as well as water
+point estimates conducted in November 2023 in Accra, Ghana. The data
+sets are associated with the following [project
+report](https://ds4owd-001.github.io/project-efvicario/) completed by
+Elizabeth Vicario for the [“data science for openwashdata”
+course](https://ds4owd-001.github.io/website/) offered by
+[openwashdata.org](https://openwashdata.org/).
 
 ## Installation
 
@@ -32,7 +39,8 @@ XLSX file from the table below.
 
 ## Data
 
-The package provides access to …
+The package provides access to household water costs, coping mechanisms
+as well as water point estimates.
 
 ``` r
 library(watercostaccra)
@@ -545,11 +553,38 @@ estimated actual stored non-drinking water in liters
 
 ## Example
 
-Here is an example illustrating
+Here is an example illustrating health risks associated with the water
+samples collected in Accra.
 
 ``` r
 library(watercostaccra)
+library(ggplot2)
+library(dplyr)
+library(tidyr)
+
+long_data <- watercostaccra2 |> 
+  pivot_longer(cols = c(coli_mpn_health_risk, tc_mpn_health_risk),
+               names_to = "risk_type",
+               values_to = "health_risk")
+
+# Count occurrences of each health_risk category within each community and risk_type
+count_data <- long_data |> 
+  group_by(community, risk_type, health_risk) |> 
+  summarise(count = n(), .groups = 'drop')
+
+# Create the bar plot
+ggplot(count_data, aes(x = community, y = count, fill = health_risk)) +
+  geom_bar(stat = "identity", position = "dodge") +
+  facet_wrap(~ risk_type) +
+  labs(title = "Health risk assessment by community",
+       x = "community",
+       y = "count",
+       fill = "health risk") +
+  scale_fill_brewer(palette = "Dark2") +
+  theme_minimal()
 ```
+
+<img src="man/figures/README-unnamed-chunk-5-1.png" width="100%" style="display: block; margin: auto;" />
 
 ## License
 
@@ -572,8 +607,7 @@ citation("watercostaccra")
 #> A BibTeX entry for LaTeX users is
 #> 
 #>   @Manual{,
-#>     title = {watercostaccra: Household water costs and coping strategies data from
-#> metropolitan Accra},
+#>     title = {watercostaccra: Household water costs and coping strategies data from metropolitan Accra},
 #>     author = {Margaux Götschmann and Elizabeth Vicario and Betty Davidson},
 #>     year = {2024},
 #>     note = {R package version 0.0.0.9000},
