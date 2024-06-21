@@ -612,8 +612,7 @@ citation("watercostaccra")
 #> A BibTeX entry for LaTeX users is
 #> 
 #>   @Manual{,
-#>     title = {watercostaccra: Household water costs and coping strategies data from
-#> metropolitan Accra},
+#>     title = {watercostaccra: Household water costs and coping strategies data from metropolitan Accra},
 #>     author = {Margaux Götschmann and Elizabeth Vicario and Betty Davidson},
 #>     year = {2024},
 #>     note = {R package version 0.0.0.9000},

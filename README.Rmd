@@ -131,6 +131,7 @@ ggplot(count_data, aes(x = community, y = count, fill = health_risk)) +
 Data are available as
 [CC-BY](https://github.com/openwashdata/watercostaccra/blob/main/LICENSE.md).
 
+
 ## Citation
 
 Please cite this package using:
