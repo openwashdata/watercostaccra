@@ -1,0 +1,36 @@
+#' watercostaccra2: Water point survey data
+#'
+#' A water point survey was conducted in two low-income communities in metropolitan Accra. These are Korle Gonno, a larger, well-planned coastal area with over 35 household water vendors, and Abuja, a small, densely packed, extralegal settlement with 15 water vendor and bathhouse businesses.
+#'
+#' @format A tibble with 6 rows and 28 variables
+#' \describe{
+#'   \item{id}{identification number}
+#'   \item{community}{one of two communities surveyed (Korle Gonno or Abuja)}
+#'   \item{type}{water point type (piped water, borehole, dug well, natural spring)}
+#'   \item{available_services}{services available at water point (bathing, public sale of water, toilet)}
+#'   \item{location}{within a compound or outside compound on a street}
+#'   \item{year_established}{year established}
+#'   \item{owner}{owner (household head or member(s), community member(s) outside household}
+#'   \item{constructor}{constructor (government or community member)}
+#'   \item{managers}{typical manager(s) of water point (household head or member(s), employee(s), self managed by customers)}
+#'   \item{estimated_storage_capacity_liters}{estimated storage capacity in liters}
+#'   \item{average_visits_per_customer}{average number of daily visits per customer}
+#'   \item{respondent_would_use_to_prepare_rice}{respondent would use this water to prepare rice (true or false)}
+#'   \item{perception_of_quality}{respondent's perception of water quality}
+#'   \item{tap_closure_days_per_week}{typical number of tap closures per week}
+#'   \item{price_25_liter_jug}{current price of 25-liter jug of water (cedis)}
+#'   \item{price_20_liter_bucket}{current price of 20-liter bucket of water (cedis)}
+#'   \item{price_30_liter_basin}{current price of 30-liter basin of water (cedis)}
+#'   \item{avg_price_per_liter_cedis}{average price per liter, calculated by averaging price per liter of known prices (cedis)}
+#'   \item{tap_closure_changes}{typical dynamics of water point management during closure (increasing prices, water point likely to close due to low storage, bathing customers have less water than when taps are flowing)}
+#'   \item{flexible_pricing}{manager adjusts price depending on amount of water needed or familiarity or need of customer (true or false)}
+#'   \item{price_increase}{price of any volume of water has increased in the last year (true or false)}
+#'   \item{CBT_sample_source}{source of sample for compartment bag test (CBT) supplied by Aquagenx (https://www.aquagenx.com/cbt-ectc/)}
+#'   \item{coli_mpn}{results of E. Coli most probable number (MPN) test per 100 mL sample}
+#'   \item{coli_mpn_ci}{results of E. Coli most probable number (MPN) test per 100 mL sample - upper 95% confidence interval (CI)}
+#'   \item{coli_mpn_health_risk}{results of E. Coli most probable number (MPN) test per 100 mL sample - descriptive health risk}
+#'   \item{tc_mpn}{results of Total Coliforms (TC) most probable number (MPN) test per 100 mL sample}
+#'   \item{tc_mpn_ci}{results of Total Coliforms (TC) most probable number (MPN) test per 100 mL sample - upper 95% confidence interval (CI)}
+#'   \item{tc_mpn_health_risk}{results of Total Coliforms (TC) most probable number (MPN) test per 100 mL sample - descriptive health risk}
+#' }
+"watercostaccra2"
