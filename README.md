@@ -572,10 +572,15 @@ count_data <- long_data |>
   group_by(community, risk_type, health_risk) |> 
   summarise(count = n(), .groups = 'drop')
 
+facet_labels <- c(
+  coli_mpn_health_risk = "Coliform MPN health risk",
+  tc_mpn_health_risk = "Total Coliform MPN health risk"
+)
+
 # Create the bar plot
 ggplot(count_data, aes(x = community, y = count, fill = health_risk)) +
   geom_bar(stat = "identity", position = "dodge") +
-  facet_wrap(~ risk_type) +
+  facet_wrap(~ risk_type, labeller = labeller(risk_type = facet_labels)) +
   labs(title = "Health risk assessment by community",
        x = "community",
        y = "count",
@@ -607,7 +612,8 @@ citation("watercostaccra")
 #> A BibTeX entry for LaTeX users is
 #> 
 #>   @Manual{,
-#>     title = {watercostaccra: Household water costs and coping strategies data from metropolitan Accra},
+#>     title = {watercostaccra: Household water costs and coping strategies data from
+#> metropolitan Accra},
 #>     author = {Margaux Götschmann and Elizabeth Vicario and Betty Davidson},
 #>     year = {2024},
 #>     note = {R package version 0.0.0.9000},
