@@ -6,14 +6,18 @@ Authors@R: c(
            comment = c(ORCID = "0009-0002-2567-3343")),
     person("Elizabeth", "Vicario", , "efv@usf.edu", role = "aut",
            comment = c(ORCID = "0009-0000-6081-2076")),
-    person("Betty", "Davidson", , "badavidson@st.ug.edu.gh", role = "aut",
-           comment = c(ORCID = "0009-0006-9594-4048"))
-           )
+    person("Betty Avanu", "Davidson", , "badavidson@st.ug.edu.gh", role = "aut",
+           comment = c(ORCID = "0009-0006-9594-4048")),
+    person("Ebenezer F.", "Amankwaa", , "efamankwaa@ug.edu.gh", role = "aut",
+           comment = c(ORCID = "0000-0002-8735-2521")),
+    person("Mian", "Zhong", , "mzhong@ethz.ch", role = "aut",
+           comment = c(ORCID = "0009-0009-4546-7214"))
+  )
 Description: A household survey on water costs and coping strategies as well as a water point survey were conducted in two low-income communities in metropolitan Accra. These are Korle Gonno, a larger, well-planned coastal area with over 35 household water vendors, and Abuja, a small, densely packed, extralegal settlement with 15 water vendor and bathhouse businesses.
 License: CC BY 4.0
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
-RoxygenNote: 7.3.1
+RoxygenNote: 7.3.2
 Depends: 
     R (>= 2.10)
 LazyData: true

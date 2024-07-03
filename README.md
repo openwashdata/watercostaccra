@@ -98,11 +98,11 @@ housing_type
 character
 </td>
 <td style="text-align:left;">
-housing type (block unit: unit in a row of apartments made of cement
-blocks, wood unit: unit in a row of apartments made of wood, house,
-compound house: single-story L- or C-shaped house with a multiple units
-around a shared courtyard, multi-story apartment building, wooden shack,
-no structure, other)
+housing type (\[1\] block unit: unit in a row of apartments made of
+cement blocks, \[2\] wood unit: unit in a row of apartments made of
+wood, house, \[3\] compound house: single-story L- or C-shaped house
+with a multiple units around a shared courtyard, \[4\] multi-story
+apartment building, \[5\] wooden shack, \[6\] no structure, \[7\] other)
 </td>
 </tr>
 <tr>
@@ -379,7 +379,8 @@ character
 </td>
 <td style="text-align:left;">
 respondent’s mechanism for paying for piped water (all respondents use
-piped water as a primary or secondary source)
+piped water as a primary or secondary source), options including
+pay_to_fetch, shares_bill, and both.
 </td>
 </tr>
 <tr>
@@ -604,16 +605,16 @@ Please cite this package using:
 citation("watercostaccra")
 #> To cite package 'watercostaccra' in publications use:
 #> 
-#>   Götschmann M, Vicario E, Davidson B (2024). _watercostaccra:
-#>   Household water costs and coping strategies data from metropolitan
-#>   Accra_. R package version 0.0.0.9000,
+#>   Götschmann M, Vicario E, Davidson B, Amankwaa E, Zhong M (2024).
+#>   _watercostaccra: Household water costs and coping strategies data
+#>   from metropolitan Accra_. R package version 0.0.0.9000,
 #>   <https://github.com/openwashdata/watercostaccra>.
 #> 
 #> A BibTeX entry for LaTeX users is
 #> 
 #>   @Manual{,
 #>     title = {watercostaccra: Household water costs and coping strategies data from metropolitan Accra},
-#>     author = {Margaux Götschmann and Elizabeth Vicario and Betty Davidson},
+#>     author = {Margaux Götschmann and Elizabeth Vicario and Betty Avanu Davidson and Ebenezer F. Amankwaa and Mian Zhong},
 #>     year = {2024},
 #>     note = {R package version 0.0.0.9000},
 #>     url = {https://github.com/openwashdata/watercostaccra},

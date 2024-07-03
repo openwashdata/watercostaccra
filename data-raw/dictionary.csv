@@ -1,7 +1,7 @@
 directory,file_name,variable_name,variable_type,description
 data,watercostaccra1.rda,id,double,identification number of household
 data,watercostaccra1.rda,community,character,one of two communities surveyed (Korle Gonno or Abuja)
-data,watercostaccra1.rda,housing_type,character,"housing type (block unit: unit in a row of apartments made of cement blocks, wood unit: unit in a row of apartments made of wood, house, compound house: single-story L- or C-shaped house with a multiple units around a shared courtyard, multi-story apartment building, wooden shack, no structure, other)"
+data,watercostaccra1.rda,housing_type,character,"housing type ([1] block unit: unit in a row of apartments made of cement blocks, [2] wood unit: unit in a row of apartments made of wood, house, [3] compound house: single-story L- or C-shaped house with a multiple units around a shared courtyard, [4] multi-story apartment building, [5] wooden shack, [6] no structure, [7] other)"
 data,watercostaccra1.rda,respondent_relationship_to_hh,character,respondent's relationship to the household head (respondent identified)
 data,watercostaccra1.rda,gender,character,gender of respondent (respondent identified)
 data,watercostaccra1.rda,tenure,character,"tenure status (renter, homeowner, or living without payment)"
@@ -24,7 +24,7 @@ data,watercostaccra1.rda,primary_source_reason_x,character,"reason for using pri
 data,watercostaccra1.rda,other_non_dw_source_use,logical,respondent uses at least one source besides primary non-drinking water source (true or false)
 data,watercostaccra1.rda,other_non_dw_sources_x,character,"additional water source(s) for non-drinking water (packaged water, piped to home, piped to neighbor's home, piped to compound, commercial or public tap, borehole, dug well, spring water, delivered water)"
 data,watercostaccra1.rda,secondary_source_reason_x,character,"reason for using secondary source of non-drinking water (primary source is not available, primary source is not clean, primary source is crowded, availability of shower stalls, convenient location)"
-data,watercostaccra1.rda,tap_payment_mode,character,respondent's mechanism for paying for piped water (all respondents use piped water as a primary or secondary source)
+data,watercostaccra1.rda,tap_payment_mode,character,"respondent's mechanism for paying for piped water (all respondents use piped water as a primary or secondary source), options including pay_to_fetch, shares_bill, and both."
 data,watercostaccra1.rda,daily_hh_water_cost_for_pay_to_fetch,double,daily estimated cost of drinking water for respondent's household
 data,watercostaccra1.rda,daily_hh_water_cost_phhm_for_pay_to_fetch,double,daily estimated cost of drinking water for respondent's household per household member
 data,watercostaccra1.rda,past_struggle_to_find_water,logical,respondent has struggled to find water before (defined as extreme difficulty to access water) (true or false)
@@ -45,7 +45,7 @@ data,watercostaccra2.rda,type,character,"water point type (piped water, borehole
 data,watercostaccra2.rda,available_services,character,"services available at water point (bathing, public sale of water, toilet)"
 data,watercostaccra2.rda,location,character,within a compound or outside compound on a street
 data,watercostaccra2.rda,year_established,integer,year established
-data,watercostaccra2.rda,owner,character,"owner (household head or member(s), community member(s) outside household"
+data,watercostaccra2.rda,owner,character,"owner, options including [1] household head, [2] household member(s), [3] community member outside household, and [4] multiple community members outside household"
 data,watercostaccra2.rda,constructor,character,constructor (government or community member)
 data,watercostaccra2.rda,managers,character,"typical manager(s) of water point (household head or member(s), employee(s), self managed by customers)"
 data,watercostaccra2.rda,estimated_storage_capacity_liters,double,estimated storage capacity in liters

@@ -2,7 +2,7 @@
 #'
 #' A water point survey was conducted in two low-income communities in metropolitan Accra. These are Korle Gonno, a larger, well-planned coastal area with over 35 household water vendors, and Abuja, a small, densely packed, extralegal settlement with 15 water vendor and bathhouse businesses.
 #'
-#' @format A tibble with 6 rows and 28 variables
+#' @format A tibble with 49 rows and 28 variables
 #' \describe{
 #'   \item{id}{identification number}
 #'   \item{community}{one of two communities surveyed (Korle Gonno or Abuja)}
@@ -10,7 +10,7 @@
 #'   \item{available_services}{services available at water point (bathing, public sale of water, toilet)}
 #'   \item{location}{within a compound or outside compound on a street}
 #'   \item{year_established}{year established}
-#'   \item{owner}{owner (household head or member(s), community member(s) outside household}
+#'   \item{owner}{owner, options including [1] household head, [2] household member(s), [3] community member outside household, and [4] multiple community members outside household}
 #'   \item{constructor}{constructor (government or community member)}
 #'   \item{managers}{typical manager(s) of water point (household head or member(s), employee(s), self managed by customers)}
 #'   \item{estimated_storage_capacity_liters}{estimated storage capacity in liters}

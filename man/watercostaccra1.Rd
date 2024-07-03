@@ -5,11 +5,11 @@
 \alias{watercostaccra1}
 \title{watercostaccra1: Household survey data}
 \format{
-A tibble with 6 rows and 40 variables
+A tibble with 116 rows and 40 variables
 \describe{
 \item{id}{identification number of household}
 \item{community}{one of two communities surveyed (Korle Gonno or Abuja)}
-\item{housing_type}{housing type (block unit: unit in a row of apartments made of cement blocks, wood unit: unit in a row of apartments made of wood, house, compound house: single-story L- or C-shaped house with a multiple units around a shared courtyard, multi-story apartment building, wooden shack, no structure, other)}
+\item{housing_type}{housing type (\link{1} block unit: unit in a row of apartments made of cement blocks, \link{2} wood unit: unit in a row of apartments made of wood, house, \link{3} compound house: single-story L- or C-shaped house with a multiple units around a shared courtyard, \link{4} multi-story apartment building, \link{5} wooden shack, \link{6} no structure, \link{7} other)}
 \item{respondent_relationship_to_hh}{respondent's relationship to the household head (respondent identified)}
 \item{gender}{gender of respondent (respondent identified)}
 \item{tenure}{tenure status (renter, homeowner, or living without payment)}
@@ -32,7 +32,7 @@ A tibble with 6 rows and 40 variables
 \item{other_non_dw_source_use}{respondent uses at least one source besides primary non-drinking water source (true or false)}
 \item{other_non_dw_sources_x}{additional water source(s) for non-drinking water (packaged water, piped to home, piped to neighbor's home, piped to compound, commercial or public tap, borehole, dug well, spring water, delivered water)}
 \item{secondary_source_reason_x}{reason for using secondary source of non-drinking water (primary source is not available, primary source is not clean, primary source is crowded, availability of shower stalls, convenient location)}
-\item{tap_payment_mode}{respondent's mechanism for paying for piped water (all respondents use piped water as a primary or secondary source)}
+\item{tap_payment_mode}{respondent's mechanism for paying for piped water (all respondents use piped water as a primary or secondary source), options including pay_to_fetch, shares_bill, and both.}
 \item{daily_hh_water_cost_for_pay_to_fetch}{daily estimated cost of drinking water for respondent's household}
 \item{daily_hh_water_cost_phhm_for_pay_to_fetch}{daily estimated cost of drinking water for respondent's household per household member}
 \item{past_struggle_to_find_water}{respondent has struggled to find water before (defined as extreme difficulty to access water) (true or false)}

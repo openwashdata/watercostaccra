@@ -5,7 +5,7 @@
 \alias{watercostaccra2}
 \title{watercostaccra2: Water point survey data}
 \format{
-A tibble with 6 rows and 28 variables
+A tibble with 49 rows and 28 variables
 \describe{
 \item{id}{identification number}
 \item{community}{one of two communities surveyed (Korle Gonno or Abuja)}
@@ -13,7 +13,7 @@ A tibble with 6 rows and 28 variables
 \item{available_services}{services available at water point (bathing, public sale of water, toilet)}
 \item{location}{within a compound or outside compound on a street}
 \item{year_established}{year established}
-\item{owner}{owner (household head or member(s), community member(s) outside household}
+\item{owner}{owner, options including \link{1} household head, \link{2} household member(s), \link{3} community member outside household, and \link{4} multiple community members outside household}
 \item{constructor}{constructor (government or community member)}
 \item{managers}{typical manager(s) of water point (household head or member(s), employee(s), self managed by customers)}
 \item{estimated_storage_capacity_liters}{estimated storage capacity in liters}
