@@ -16,41 +16,41 @@ data,watercostaccra1.rda,business_water_use,character,respondent's business uses
 data,watercostaccra1.rda,business_water_source,character,"primary source of water for business use (packaged water, piped to home, piped to neighbor's home, piped to compound, commercial or public tap, borehole, dug well, spring water, delivered water)"
 data,watercostaccra1.rda,primary_dw_source,character,"primary source of drinking water (packaged water, piped to home, piped to neighbor's home, piped to compound, commercial or public tap, borehole, dug well, spring water, delivered water)"
 data,watercostaccra1.rda,dw_reason_x,character,"respondent reasons for using drinking water source (convenience, affordability, availability, temperature, cleanliness, taste, habit or cultural norm, trustworthiness, health, other)"
-data,watercostaccra1.rda,package_type_preference,character,"respondent typically purchases individual sachets/bottles, multipacks of these, or both"
-data,watercostaccra1.rda,package_size_reason_x,character,"reason for purchasing preferred package type (storage space in home, cost effectiveness, temperature at time of purchase, availability of money, convenience, size needed for respondent or household, avoiding wasting water by purchasing when needed)"
+data,watercostaccra1.rda,package_type_preference,character,"respondent typically purchases individual sachets/packets/bottles, multipacks of these, or both"
+data,watercostaccra1.rda,package_size_reason_x,character,"reason for purchasing preferred package type (storage space in home, cost effectiveness, temperature at time of purchase, availability of money, convenience, size needed for respondent or household, avoiding wasting water by purchasing only when needed)"
 data,watercostaccra1.rda,dw_treatment,character,treatment methods of water before drinking
 data,watercostaccra1.rda,primary_water_source,character,"primary water source for non-drinking water (packaged water, piped to home, piped to neighbor's home, piped to compound, commercial or public tap, borehole, dug well, spring water, delivered water)"
 data,watercostaccra1.rda,primary_source_reason_x,character,"reason for using primary source of non-drinking water (proximity to home, convenience, affordability, availability, cleanliness, other)"
 data,watercostaccra1.rda,other_non_dw_source_use,logical,respondent uses at least one source besides primary non-drinking water source (true or false)
 data,watercostaccra1.rda,other_non_dw_sources_x,character,"additional water source(s) for non-drinking water (packaged water, piped to home, piped to neighbor's home, piped to compound, commercial or public tap, borehole, dug well, spring water, delivered water)"
 data,watercostaccra1.rda,secondary_source_reason_x,character,"reason for using secondary source of non-drinking water (primary source is not available, primary source is not clean, primary source is crowded, availability of shower stalls, convenient location)"
-data,watercostaccra1.rda,tap_payment_mode,character,"respondent's mechanism for paying for piped water (all respondents use piped water as a primary or secondary source), options including pay_to_fetch, shares_bill, and both."
+data,watercostaccra1.rda,tap_payment_mode,character,"respondent's mechanism for paying for piped water (all respondents use piped water as a primary or secondary source). Options include paying to fetch, sharing or paying the whole bill, or both (at different taps)"
 data,watercostaccra1.rda,daily_hh_water_cost_for_pay_to_fetch,double,daily estimated cost of drinking water for respondent's household
 data,watercostaccra1.rda,daily_hh_water_cost_phhm_for_pay_to_fetch,double,daily estimated cost of drinking water for respondent's household per household member
-data,watercostaccra1.rda,past_struggle_to_find_water,logical,respondent has struggled to find water before (defined as extreme difficulty to access water) (true or false)
+data,watercostaccra1.rda,past_struggle_to_find_water,logical,respondent has struggled to find water before (defined as extreme difficulty in accessing water) (true or false)
 data,watercostaccra1.rda,time_of_last_struggle_to_find_water,character,"respondent's last time of struggle to find water (e.g., in the last week)"
 data,watercostaccra1.rda,weekdays_struggle_to_find_water,double,days in a week the respondent typically struggles to find or pay for water
-data,watercostaccra1.rda,past_struggle_primary_reason,character,"primary reason for past struggles to find water (availability, high cost, distance to nearest source)"
+data,watercostaccra1.rda,past_struggle_primary_reason,character,"primary reason for past struggles to find water (availability, cost, distance to nearest source)"
 data,watercostaccra1.rda,tap_closure_knowledge_x,character,"respondent's knowledge about tap closures (usually known, sometimes known, expected due to patterns in closures, not known, or no answer)"
 data,watercostaccra1.rda,coping_mechanism_x,character,"strategies for coping with water shortage (spending more on the same amount of water, purchasing extra water to store at home, using another source, using packaged water for cooking, skipping cooking, using packaged water for bathing, skipping bathing, closing business due to water shortage, skipping laundry)"
 data,watercostaccra1.rda,water_storage_drinking_water,logical,respondent typically stores drinking water at home (true or false)
 data,watercostaccra1.rda,water_storage_non_drinking_water,logical,respondent typically stores non-drinking water at home (true or false)
 data,watercostaccra1.rda,water_storage_none,logical,respondent typically does not store water at home (true or false)
 data,watercostaccra1.rda,storage_containers_x,character,"if respondent typically stores non-drinking water, types of storage containers (plastic jugs also called jerry cans or Kufuor gallons, uncovered or covered barrels, other covered or uncovered containers)"
-data,watercostaccra1.rda,estimated_non_dw_storage_capacity,double,estimated capacity of storage for non-drinking water in liters
-data,watercostaccra1.rda,estimated_stored_non_dw,double,estimated actual stored non-drinking water in liters
+data,watercostaccra1.rda,estimated_non_dw_storage_capacity,double,estimated capacity of storage for non-drinking water (liters)
+data,watercostaccra1.rda,estimated_stored_non_dw,double,estimated actual storage of non-drinking water (liters)
 data,watercostaccra2.rda,id,integer,identification number
 data,watercostaccra2.rda,community,character,one of two communities surveyed (Korle Gonno or Abuja)
 data,watercostaccra2.rda,type,character,"water point type (piped water, borehole, dug well, natural spring)"
-data,watercostaccra2.rda,available_services,character,"services available at water point (bathing, public sale of water, toilet)"
-data,watercostaccra2.rda,location,character,within a compound or outside compound on a street
+data,watercostaccra2.rda,available_services,character,"services available at water point (bathing, public sale of water, toilet, or comination of these)"
+data,watercostaccra2.rda,location,character,within a compound or outside compound adjacent to street
 data,watercostaccra2.rda,year_established,integer,year established
 data,watercostaccra2.rda,owner,character,"owner, options including [1] household head, [2] household member(s), [3] community member outside household, and [4] multiple community members outside household"
 data,watercostaccra2.rda,constructor,character,constructor (government or community member)
-data,watercostaccra2.rda,managers,character,"typical manager(s) of water point (household head or member(s), employee(s), self managed by customers)"
+data,watercostaccra2.rda,managers,character,"typical manager(s) of water point (household head or member(s), employee(s), self managed by customers, or combination of these)"
 data,watercostaccra2.rda,estimated_storage_capacity_liters,double,estimated storage capacity in liters
 data,watercostaccra2.rda,average_visits_per_customer,double,average number of daily visits per customer
-data,watercostaccra2.rda,respondent_would_use_to_prepare_rice,logical,respondent would use this water to prepare rice (true or false)
+data,watercostaccra2.rda,respondent_would_use_to_prepare_rice,logical,"respondent would use this water to prepare rice, based on its quality (true or false)"
 data,watercostaccra2.rda,perception_of_quality,character,respondent's perception of water quality
 data,watercostaccra2.rda,tap_closure_days_per_week,double,typical number of tap closures per week
 data,watercostaccra2.rda,price_25_liter_jug,double,current price of 25-liter jug of water (cedis)
