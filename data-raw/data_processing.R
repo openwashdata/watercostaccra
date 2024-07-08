@@ -22,16 +22,31 @@ household_data <- household_data |>
 # Remove last five rows because of missing values
 household_data <- head(household_data, -5)
 
-# Modify variables types
-household_data$years_in_community <- as.integer(household_data$years_in_community)
-household_data$daily_hh_water_cost_for_pay_to_fetch <-
-  as.integer(household_data$daily_hh_water_cost_for_pay_to_fetch)
-household_data$daily_hh_water_cost_phhm_for_pay_to_fetch <-
-  as.integer(household_data$daily_hh_water_cost_phhm_for_pay_to_fetch)
-
 # Replace n/a entries with NA
-watercostaccra1 <- household_data |>
-  replace_with_na_all(condition = ~.x == "n/a")
+household_data <- household_data |>
+  naniar::replace_with_na_all(condition = ~.x == "n/a")
+
+# Modify variables types
+household_data <- household_data |>
+  dplyr::mutate(dplyr::across(c(years_in_community,
+                         daily_hh_water_cost_for_pay_to_fetch,
+                         daily_hh_water_cost_phhm_for_pay_to_fetch), as.integer))|>
+  dplyr::mutate(dplyr::across(c(community, housing_type,
+                                respondent_relationship_to_hh,
+                                gender, tenure,
+                                primary_dw_source,
+                                dw_treatment,
+                                primary_water_source,
+                                tap_payment_mode,
+                                time_of_last_struggle_to_find_water,
+                                past_struggle_primary_reason,
+                                package_type_preference),
+                              as.factor)) |>
+  dplyr::mutate(dplyr::across(starts_with("business_"), as.factor)) |>
+  dplyr::mutate(business_water_use = as.logical(business_water_use))
+
+
+
 
 ## Clean the raw data on water point into a tidy format here
 # Remove date column and other unnecessary columns
