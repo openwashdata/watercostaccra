@@ -51,15 +51,15 @@ household_data <- household_data |>
 ## Clean the raw data on water point into a tidy format here
 # Remove date column and other unnecessary columns
 waterpoint_data <- waterpoint_data |>
-  select(-date, -constructor_na, -average_visits_per_customer_unknown,
+  dplyr::select(-date, -constructor_na, -average_visits_per_customer_unknown,
          -perception_of_quality_unknown, -tap_closure_days_per_week_unknown,
          -avg_price_per_liter_cedis_unknown, -E_Coli_CBT_results_na,
          -TC_CBT_results_na)
 # Modify community name and one column name for consistency
 waterpoint_data <- waterpoint_data |>
-  mutate(community = case_when(community == "korle_gonno" ~ "kg",
+  dplyr::mutate(community = case_when(community == "korle_gonno" ~ "kg",
                                .default = community)) |>
-  rename(managers = `manager(s)`)
+  dplyr::rename(managers = `manager(s)`)
 
 # Remove last five rows because of missing values
 waterpoint_data <- head(waterpoint_data, -5)
@@ -77,6 +77,14 @@ watercostaccra2 <- waterpoint_data |>
          tc_mpn_ci = `TC_CBT_results_MPN_upper_95%_CI/100ml`,
          tc_mpn_health_risk = `TC_CBT_results_health_risk`)
 
+# Modify variable types
+watercostaccra2 <- watercostaccra2 |>
+  dplyr::mutate(across(c(community, type, available_services,
+                         location, owner, constructor, managers,
+                         respondent_would_use_to_prepare_rice, perception_of_quality,
+                         tap_closure_changes, CBT_sample_source, coli_mpn_health_risk,
+                         tc_mpn_health_risk),
+                       as.factor))
 # Export Data ------------------------------------------------------------------
 usethis::use_data(watercostaccra1, overwrite = TRUE)
 usethis::use_data(watercostaccra2, overwrite = TRUE)
