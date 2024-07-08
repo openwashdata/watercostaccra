@@ -1,10 +1,10 @@
 directory,file_name,variable_name,variable_type,description
 data,watercostaccra1.rda,id,double,identification number of household
 data,watercostaccra1.rda,community,character,one of two communities surveyed (Korle Gonno or Abuja)
-data,watercostaccra1.rda,housing_type,character,"housing type ([1] block unit: unit in a row of apartments made of cement blocks, [2] wood unit: unit in a row of apartments made of wood, house, [3] compound house: single-story L- or C-shaped house with a multiple units around a shared courtyard, [4] multi-story apartment building, [5] wooden shack, [6] no structure, [7] other)"
+data,watercostaccra1.rda,housing_type,character,"housing type options including [1] block unit: unit in a row of apartments made of cement blocks, [2] wood unit: unit in a row of apartments made of wood, [3] house, [4] compound house: single-story L- or C-shaped house with a multiple units around a shared courtyard, [5] multi-story apartment building, [6] wooden shack, [7] no structure, and [8] other."
 data,watercostaccra1.rda,respondent_relationship_to_hh,character,respondent's relationship to the household head (respondent identified)
 data,watercostaccra1.rda,gender,character,gender of respondent (respondent identified)
-data,watercostaccra1.rda,tenure,character,"tenure status (renter, homeowner, or living without payment)"
+data,watercostaccra1.rda,tenure,character,"tenure status options including [1] renter, [2] homeowner, or [3] living without payment)"
 data,watercostaccra1.rda,years_in_community,integer,number of years respondent has lived in community
 data,watercostaccra1.rda,adult_count,double,"number of adults in household including respondent. Household is described as those ""eating from the same pot"""
 data,watercostaccra1.rda,child_count,double,"number of children under 18 in household. Household is described as those ""eating from the same pot"""
