@@ -77,11 +77,11 @@ The package provides access to household water costs, coping mechanisms as well 
 library(watercostaccra)
 ```
 
-The `watercostaccra1` data set contains data about a household survey on water costs and coping strategies in Accra. It has `r nrow(watercostaccra1)` observations and `r ncol(watercostaccra1)` variables. The `watercostaccra2` data set contains data about a water point survey conducted in Accra as well. It has `r nrow(watercostaccra2)` observations and `r ncol(watercostaccra2)` variables. For an overview of the variable names, see the following table.
+The `households` data set contains data about a household survey on water costs and coping strategies in Accra. It has `r nrow(households)` observations and `r ncol(households)` variables. The `waterpoints` data set contains data about a water point survey conducted in Accra as well. It has `r nrow(waterpoints)` observations and `r ncol(waterpoints)` variables. For an overview of the variable names, see the following table.
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE}
 readr::read_csv("data-raw/dictionary.csv") |>
-  dplyr::filter(file_name == "watercostaccra1.rda") |>
+  dplyr::filter(file_name == "households.rda") |>
   dplyr::select(variable_name:description) |> 
   knitr::kable() |> 
   kableExtra::kable_styling("striped")
@@ -97,7 +97,7 @@ library(ggplot2)
 library(dplyr)
 library(tidyr)
 
-long_data <- watercostaccra2 |> 
+long_data <- waterpoints |> 
   pivot_longer(cols = c(coli_mpn_health_risk, tc_mpn_health_risk),
                names_to = "risk_type",
                values_to = "health_risk")

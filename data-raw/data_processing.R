@@ -27,7 +27,7 @@ household_data <- household_data |>
   naniar::replace_with_na_all(condition = ~.x == "n/a")
 
 # Modify variables types
-household_data <- household_data |>
+households <- household_data |>
   dplyr::mutate(dplyr::across(c(years_in_community,
                          daily_hh_water_cost_for_pay_to_fetch,
                          daily_hh_water_cost_phhm_for_pay_to_fetch), as.integer))|>
@@ -69,7 +69,7 @@ waterpoint_data <- waterpoint_data |>
   replace_with_na_all(condition = ~.x == "n/a")
 
 # Rename columns
-watercostaccra2 <- waterpoint_data |>
+waterpoint_data <- waterpoint_data |>
   rename(coli_mpn = `E_Coli_CBT_results_MPN/100ml`,
          coli_mpn_ci = `E_Coli_CBT_results_MPN_upper_95%_CI/100ml`,
          coli_mpn_health_risk = `E_Coli_CBT_results_health_risk`,
@@ -78,7 +78,7 @@ watercostaccra2 <- waterpoint_data |>
          tc_mpn_health_risk = `TC_CBT_results_health_risk`)
 
 # Modify variable types
-watercostaccra2 <- watercostaccra2 |>
+waterpoints <- waterpoint_data |>
   dplyr::mutate(across(c(community, type, available_services,
                          location, owner, constructor, managers,
                          respondent_would_use_to_prepare_rice, perception_of_quality,
@@ -86,16 +86,16 @@ watercostaccra2 <- watercostaccra2 |>
                          tc_mpn_health_risk),
                        as.factor))
 # Export Data ------------------------------------------------------------------
-usethis::use_data(watercostaccra1, overwrite = TRUE)
-usethis::use_data(watercostaccra2, overwrite = TRUE)
+usethis::use_data(households, overwrite = TRUE)
+usethis::use_data(waterpoints, overwrite = TRUE)
 fs::dir_create(here::here("inst", "extdata"))
-readr::write_csv(watercostaccra1,
-                 here::here("inst", "extdata", paste0("watercostaccra1", ".csv")))
-openxlsx::write.xlsx(watercostaccra1,
-                     here::here("inst", "extdata", paste0("watercostaccra1", ".xlsx")))
+readr::write_csv(households,
+                 here::here("inst", "extdata", paste0("households", ".csv")))
+openxlsx::write.xlsx(households,
+                     here::here("inst", "extdata", paste0("households", ".xlsx")))
 
-readr::write_csv(watercostaccra2,
-                 here::here("inst", "extdata", paste0("watercostaccra2", ".csv")))
-openxlsx::write.xlsx(watercostaccra2,
-                     here::here("inst", "extdata", paste0("watercostaccra2", ".xlsx")))
+readr::write_csv(waterpoints,
+                 here::here("inst", "extdata", paste0("waterpoints", ".csv")))
+openxlsx::write.xlsx(waterpoints,
+                     here::here("inst", "extdata", paste0("waterpoints", ".xlsx")))
 

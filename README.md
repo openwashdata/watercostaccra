@@ -32,10 +32,10 @@ devtools::install_github("openwashdata/watercostaccra")
 Alternatively, you can download the individual data sets as a CSV or
 XLSX file from the table below.
 
-| dataset         | CSV                                                                                                      | XLSX                                                                                                       |
-|:----------------|:---------------------------------------------------------------------------------------------------------|:-----------------------------------------------------------------------------------------------------------|
-| watercostaccra1 | [Download CSV](https://github.com/openwashdata/watercostaccra/raw/main/inst/extdata/watercostaccra1.csv) | [Download XLSX](https://github.com/openwashdata/watercostaccra/raw/main/inst/extdata/watercostaccra1.xlsx) |
-| watercostaccra2 | [Download CSV](https://github.com/openwashdata/watercostaccra/raw/main/inst/extdata/watercostaccra2.csv) | [Download XLSX](https://github.com/openwashdata/watercostaccra/raw/main/inst/extdata/watercostaccra2.xlsx) |
+| dataset     | CSV                                                                                                  | XLSX                                                                                                   |
+|:------------|:-----------------------------------------------------------------------------------------------------|:-------------------------------------------------------------------------------------------------------|
+| households  | [Download CSV](https://github.com/openwashdata/watercostaccra/raw/main/inst/extdata/households.csv)  | [Download XLSX](https://github.com/openwashdata/watercostaccra/raw/main/inst/extdata/households.xlsx)  |
+| waterpoints | [Download CSV](https://github.com/openwashdata/watercostaccra/raw/main/inst/extdata/waterpoints.csv) | [Download XLSX](https://github.com/openwashdata/watercostaccra/raw/main/inst/extdata/waterpoints.xlsx) |
 
 ## Data
 
@@ -46,9 +46,9 @@ as well as water point estimates.
 library(watercostaccra)
 ```
 
-The `watercostaccra1` data set contains data about a household survey on
+The `households` data set contains data about a household survey on
 water costs and coping strategies in Accra. It has 116 observations and
-89 variables. The `watercostaccra2` data set contains data about a water
+89 variables. The `waterpoints` data set contains data about a water
 point survey conducted in Accra as well. It has 49 observations and 30
 variables. For an overview of the variable names, see the following
 table.
@@ -70,24 +70,14 @@ description
 <tbody>
 <tr>
 <td style="text-align:left;">
-id
-</td>
-<td style="text-align:left;">
-double
-</td>
-<td style="text-align:left;">
-identification number of household
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
 community
 </td>
 <td style="text-align:left;">
-character
+factor
 </td>
 <td style="text-align:left;">
-one of two communities surveyed (Korle Gonno or Abuja)
+the communities surveyed, options including \[1\] kg: Korle Gonno and
+\[2\] abuja: Abuja
 </td>
 </tr>
 <tr>
@@ -95,14 +85,15 @@ one of two communities surveyed (Korle Gonno or Abuja)
 housing_type
 </td>
 <td style="text-align:left;">
-character
+factor
 </td>
 <td style="text-align:left;">
-housing type (\[1\] block unit: unit in a row of apartments made of
-cement blocks, \[2\] wood unit: unit in a row of apartments made of
-wood, house, \[3\] compound house: single-story L- or C-shaped house
-with a multiple units around a shared courtyard, \[4\] multi-story
-apartment building, \[5\] wooden shack, \[6\] no structure, \[7\] other)
+housing type, options includin \[1\] block_unit: unit in a row of
+apartments made of cement blocks, \[2\] wood_unit: unit in a row of
+apartments made of wood, \[3\] house, \[4\] compound_house: single-story
+L- or C-shaped house with a multiple units around a shared courtyard,
+\[5\] multistory_apt: multi-story apartment building, \[6\] wood_shack:
+wooden shack, \[7\] no_structure, and \[8\] other
 </td>
 </tr>
 <tr>
@@ -110,10 +101,12 @@ apartment building, \[5\] wooden shack, \[6\] no structure, \[7\] other)
 respondent_relationship_to_hh
 </td>
 <td style="text-align:left;">
-character
+factor
 </td>
 <td style="text-align:left;">
-respondent’s relationship to the household head (respondent identified)
+respondent’s relationship to the household head (respondent identified),
+options including \[1\] self, \[2\] child, \[3\] spouse, and \[4\]
+other_relative
 </td>
 </tr>
 <tr>
@@ -121,10 +114,11 @@ respondent’s relationship to the household head (respondent identified)
 gender
 </td>
 <td style="text-align:left;">
-character
+factor
 </td>
 <td style="text-align:left;">
-gender of respondent (respondent identified)
+gender (self-identified) of respondent, options including \[1\] female
+and \[2\] male
 </td>
 </tr>
 <tr>
@@ -135,7 +129,8 @@ tenure
 character
 </td>
 <td style="text-align:left;">
-tenure status (renter, homeowner, or living without payment)
+tenure status, options including \[1\] rented: renter, \[2\] owned:
+homeowner, or \[3\] no_payment: living without payment)
 </td>
 </tr>
 <tr>
@@ -190,11 +185,11 @@ number of rooms used for sleeping. Household is described as those
 business_ownership
 </td>
 <td style="text-align:left;">
-character
+factor
 </td>
 <td style="text-align:left;">
-household or respondent owns a business (respondent-owned or
-household-owned)
+household or respondent owns a business, options including \[1\]
+respondent-owned and \[2\] household-owned
 </td>
 </tr>
 <tr>
@@ -205,7 +200,9 @@ business_location
 character
 </td>
 <td style="text-align:left;">
-home-based, fixed location outside home, or mobile location
+location type of the business, options including \[1\]home_based, \[2\]
+outside_home: fixed location outside home, or \[3\] mobile: mobile
+location.
 </td>
 </tr>
 <tr>
@@ -216,7 +213,8 @@ business_category
 character
 </td>
 <td style="text-align:left;">
-type of business (e.g., salon, shop, water vending)
+type of business, options including \[1\] food, \[2\] shop, \[3\] salon,
+\[4\] vented_water, \[5\] tailoring, and \[6\] other_services.
 </td>
 </tr>
 <tr>
@@ -224,7 +222,7 @@ type of business (e.g., salon, shop, water vending)
 business_water_use
 </td>
 <td style="text-align:left;">
-character
+logical
 </td>
 <td style="text-align:left;">
 respondent’s business uses water beyond typical needs of household (true
@@ -236,7 +234,7 @@ or false)
 business_water_source
 </td>
 <td style="text-align:left;">
-character
+factor
 </td>
 <td style="text-align:left;">
 primary source of water for business use (packaged water, piped to home,
@@ -249,7 +247,7 @@ borehole, dug well, spring water, delivered water)
 primary_dw_source
 </td>
 <td style="text-align:left;">
-character
+factor
 </td>
 <td style="text-align:left;">
 primary source of drinking water (packaged water, piped to home, piped
@@ -262,12 +260,13 @@ borehole, dug well, spring water, delivered water)
 dw_reason_x
 </td>
 <td style="text-align:left;">
-character
+logical
 </td>
 <td style="text-align:left;">
-respondent reasons for using drinking water source (convenience,
-affordability, availability, temperature, cleanliness, taste, habit or
-cultural norm, trustworthiness, health, other)
+columns about respondent reasons for using drinking water source on
+convenience, affordability, availability, temperature, cleanliness,
+taste, habit or cultural norm, trustworthiness, health, other. (true or
+false)
 </td>
 </tr>
 <tr>
@@ -275,11 +274,12 @@ cultural norm, trustworthiness, health, other)
 package_type_preference
 </td>
 <td style="text-align:left;">
-character
+factor
 </td>
 <td style="text-align:left;">
-respondent typically purchases individual sachets/bottles, multipacks of
-these, or both
+respondent typically purchases individual, options including
+\[1\]individual: sachets/packets/bottles, \[2\] bag: multipacks of
+these, or \[3\] both
 </td>
 </tr>
 <tr>
@@ -287,13 +287,14 @@ these, or both
 package_size_reason_x
 </td>
 <td style="text-align:left;">
-character
+logical
 </td>
 <td style="text-align:left;">
-reason for purchasing preferred package type (storage space in home,
-cost effectiveness, temperature at time of purchase, availability of
-money, convenience, size needed for respondent or household, avoiding
-wasting water by purchasing when needed)
+columns about reasons for purchasing preferred package type on storage
+space in home, cost effectiveness, temperature at time of purchase,
+availability of money, convenience, size needed for respondent or
+household, avoiding wasting water by purchasing only when needed. (true
+or false)
 </td>
 </tr>
 <tr>
@@ -301,10 +302,12 @@ wasting water by purchasing when needed)
 dw_treatment
 </td>
 <td style="text-align:left;">
-character
+factor
 </td>
 <td style="text-align:left;">
-treatment methods of water before drinking
+treatment methods of water before drinking, options including
+\[1\]no_treatment, \[2\] boil, \[3\]boil;settle, \[4\] filter, and
+\[5\]settle
 </td>
 </tr>
 <tr>
@@ -312,12 +315,13 @@ treatment methods of water before drinking
 primary_water_source
 </td>
 <td style="text-align:left;">
-character
+factor
 </td>
 <td style="text-align:left;">
-primary water source for non-drinking water (packaged water, piped to
-home, piped to neighbor’s home, piped to compound, commercial or public
-tap, borehole, dug well, spring water, delivered water)
+primary water source for non-drinking water, options including
+\[1\]packaged water, \[2\]piped_to_home, \[3\]piped to neighbor’s home,
+\[4\]piped to compound, \[5\]commercial or public tap, \[6\]borehole,
+\[7\]dug well, \[8\]spring water, and \[9\]delivered water)
 </td>
 </tr>
 <tr>
@@ -325,11 +329,12 @@ tap, borehole, dug well, spring water, delivered water)
 primary_source_reason_x
 </td>
 <td style="text-align:left;">
-character
+logical
 </td>
 <td style="text-align:left;">
-reason for using primary source of non-drinking water (proximity to
-home, convenience, affordability, availability, cleanliness, other)
+columns about reasons for using primary source of non-drinking water on
+proximity to home, convenience, affordability, availability,
+cleanliness, other. (true or false)
 </td>
 </tr>
 <tr>
@@ -349,12 +354,13 @@ source (true or false)
 other_non_dw_sources_x
 </td>
 <td style="text-align:left;">
-character
+logical
 </td>
 <td style="text-align:left;">
-additional water source(s) for non-drinking water (packaged water, piped
-to home, piped to neighbor’s home, piped to compound, commercial or
-public tap, borehole, dug well, spring water, delivered water)
+columns about additional water source(s) for non-drinking water on
+packaged water, piped to home, piped to neighbor’s home, piped to
+compound, commercial or public tap, borehole, dug well, spring water,
+delivered water. (true or false)
 </td>
 </tr>
 <tr>
@@ -362,12 +368,12 @@ public tap, borehole, dug well, spring water, delivered water)
 secondary_source_reason_x
 </td>
 <td style="text-align:left;">
-character
+logical
 </td>
 <td style="text-align:left;">
-reason for using secondary source of non-drinking water (primary source
-is not available, primary source is not clean, primary source is
-crowded, availability of shower stalls, convenient location)
+columns about reason for using secondary source of non-drinking water
+(primary source is not available, primary source is not clean, primary
+source is crowded, availability of shower stalls, convenient location)
 </td>
 </tr>
 <tr>
@@ -375,12 +381,13 @@ crowded, availability of shower stalls, convenient location)
 tap_payment_mode
 </td>
 <td style="text-align:left;">
-character
+factor
 </td>
 <td style="text-align:left;">
 respondent’s mechanism for paying for piped water (all respondents use
-piped water as a primary or secondary source), options including
-pay_to_fetch, shares_bill, and both.
+piped water as a primary or secondary source). Options include \[1\]
+pay_to_fetch: paying to fetch, \[2\] shares_bill: sharing or paying the
+whole bill, or \[3\] both (at different taps).
 </td>
 </tr>
 <tr>
@@ -415,7 +422,7 @@ logical
 </td>
 <td style="text-align:left;">
 respondent has struggled to find water before (defined as extreme
-difficulty to access water) (true or false)
+difficulty in accessing water) (true or false)
 </td>
 </tr>
 <tr>
@@ -426,8 +433,9 @@ time_of_last_struggle_to_find_water
 character
 </td>
 <td style="text-align:left;">
-respondent’s last time of struggle to find water (e.g., in the last
-week)
+respondent’s last time of struggle to find water, options including
+\[1\] last_3_days, \[2\] last_7_days, \[3\] last_30_days, \[4\]
+last_year, and \[5\]over_year_ago.
 </td>
 </tr>
 <tr>
@@ -447,11 +455,12 @@ water
 past_struggle_primary_reason
 </td>
 <td style="text-align:left;">
-character
+factor
 </td>
 <td style="text-align:left;">
-primary reason for past struggles to find water (availability, high
-cost, distance to nearest source)
+primary reason for past struggles to find water, options including \[1\]
+availability: availability, \[2\] cost, and \[3\] distance: distance to
+nearest source.
 </td>
 </tr>
 <tr>
@@ -459,11 +468,12 @@ cost, distance to nearest source)
 tap_closure_knowledge_x
 </td>
 <td style="text-align:left;">
-character
+logical
 </td>
 <td style="text-align:left;">
-respondent’s knowledge about tap closures (usually known, sometimes
-known, expected due to patterns in closures, not known, or no answer)
+columns about respondent’s knowledge about tap closures (usually known,
+sometimes known, expected due to patterns in closures, not known, or no
+answer). (true or false)
 </td>
 </tr>
 <tr>
@@ -471,14 +481,14 @@ known, expected due to patterns in closures, not known, or no answer)
 coping_mechanism_x
 </td>
 <td style="text-align:left;">
-character
+logical
 </td>
 <td style="text-align:left;">
-strategies for coping with water shortage (spending more on the same
-amount of water, purchasing extra water to store at home, using another
-source, using packaged water for cooking, skipping cooking, using
-packaged water for bathing, skipping bathing, closing business due to
-water shortage, skipping laundry)
+columns about strategies for coping with water shortage (spending more
+on the same amount of water, purchasing extra water to store at home,
+using another source, using packaged water for cooking, skipping
+cooking, using packaged water for bathing, skipping bathing, closing
+business due to water shortage, skipping laundry). (true or false)
 </td>
 </tr>
 <tr>
@@ -519,12 +529,13 @@ respondent typically does not store water at home (true or false)
 storage_containers_x
 </td>
 <td style="text-align:left;">
-character
+logical
 </td>
 <td style="text-align:left;">
-if respondent typically stores non-drinking water, types of storage
-containers (plastic jugs also called jerry cans or Kufuor gallons,
-uncovered or covered barrels, other covered or uncovered containers)
+columns about if respondent typically stores non-drinking water, types
+of storage containers (plastic jugs also called jerry cans or Kufuor
+gallons, uncovered or covered barrels, other covered or uncovered
+containers)
 </td>
 </tr>
 <tr>
@@ -535,7 +546,7 @@ estimated_non_dw_storage_capacity
 double
 </td>
 <td style="text-align:left;">
-estimated capacity of storage for non-drinking water in liters
+estimated capacity of storage for non-drinking water (liters)
 </td>
 </tr>
 <tr>
@@ -546,7 +557,7 @@ estimated_stored_non_dw
 double
 </td>
 <td style="text-align:left;">
-estimated actual stored non-drinking water in liters
+estimated actual storage of non-drinking water (liters)
 </td>
 </tr>
 </tbody>
@@ -563,7 +574,7 @@ library(ggplot2)
 library(dplyr)
 library(tidyr)
 
-long_data <- watercostaccra2 |> 
+long_data <- waterpoints |> 
   pivot_longer(cols = c(coli_mpn_health_risk, tc_mpn_health_risk),
                names_to = "risk_type",
                values_to = "health_risk")
