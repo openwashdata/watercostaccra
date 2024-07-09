@@ -3,14 +3,14 @@ data,households.rda,community,factor,"the communities surveyed, options includin
 data,households.rda,housing_type,factor,"housing type, options includin [1] block_unit: unit in a row of apartments made of cement blocks, [2] wood_unit: unit in a row of apartments made of wood, [3] house, [4] compound_house: single-story L- or C-shaped house with a multiple units around a shared courtyard, [5] multistory_apt: multi-story apartment building, [6] wood_shack: wooden shack, [7] no_structure, and [8] other"
 data,households.rda,respondent_relationship_to_hh,factor,"respondent's relationship to the household head (respondent identified), options including [1] self, [2] child, [3] spouse, and [4] other_relative"
 data,households.rda,gender,factor,"gender (self-identified) of respondent, options including [1] female and [2] male"
-data,households.rda,tenure,character,"tenure status, options including [1] rented: renter, [2] owned: homeowner, or [3] no_payment: living without payment)"
+data,households.rda,tenure,factor,"tenure status, options including [1] rented: renter, [2] owned: homeowner, or [3] no_payment: living without payment)"
 data,households.rda,years_in_community,integer,number of years respondent has lived in community
 data,households.rda,adult_count,double,"number of adults in household including respondent. Household is described as those ""eating from the same pot"""
 data,households.rda,child_count,double,"number of children under 18 in household. Household is described as those ""eating from the same pot"""
 data,households.rda,rooms_in_hh,double,"number of rooms used for sleeping. Household is described as those ""eating from the same pot"""
 data,households.rda,business_ownership,factor,"household or respondent owns a business, options including [1] respondent-owned and [2] household-owned"
-data,households.rda,business_location,character,"location type of the business, options including [1]home_based, [2] outside_home: fixed location outside home, or [3] mobile: mobile location."
-data,households.rda,business_category,character,"type of business, options including [1] food, [2] shop, [3] salon, [4] vented_water, [5] tailoring, and [6] other_services."
+data,households.rda,business_location,factor,"location type of the business, options including [1] home_based, [2] outside_home: fixed location outside home, or [3] mobile: mobile location."
+data,households.rda,business_category,factor,"type of business, options including [1] food, [2] shop, [3] salon, [4] vented_water, [5] tailoring, and [6] other_services."
 data,households.rda,business_water_use,logical,respondent's business uses water beyond typical needs of household (true or false)
 data,households.rda,business_water_source,factor,"primary source of water for business use (packaged water, piped to home, piped to neighbor's home, piped to compound, commercial or public tap, borehole, dug well, spring water, delivered water)"
 data,households.rda,primary_dw_source,factor,"primary source of drinking water (packaged water, piped to home, piped to neighbor's home, piped to compound, commercial or public tap, borehole, dug well, spring water, delivered water)"
@@ -27,7 +27,7 @@ data,households.rda,tap_payment_mode,factor,"respondent's mechanism for paying f
 data,households.rda,daily_hh_water_cost_for_pay_to_fetch,double,daily estimated cost of drinking water for respondent's household
 data,households.rda,daily_hh_water_cost_phhm_for_pay_to_fetch,double,daily estimated cost of drinking water for respondent's household per household member
 data,households.rda,past_struggle_to_find_water,logical,respondent has struggled to find water before (defined as extreme difficulty in accessing water) (true or false)
-data,households.rda,time_of_last_struggle_to_find_water,character,"respondent's last time of struggle to find water, options including [1] last_3_days, [2] last_7_days, [3] last_30_days, [4] last_year, and [5]over_year_ago."
+data,households.rda,time_of_last_struggle_to_find_water,factor,"respondent's last time of struggle to find water, options including [1] last_3_days, [2] last_7_days, [3] last_30_days, [4] last_year, and [5] over_year_ago."
 data,households.rda,weekdays_struggle_to_find_water,double,days in a week the respondent typically struggles to find or pay for water
 data,households.rda,past_struggle_primary_reason,factor,"primary reason for past struggles to find water, options including [1] availability: availability, [2] cost, and [3] distance: distance to nearest source."
 data,households.rda,tap_closure_knowledge_x,logical,"columns about respondent's knowledge about tap closures (usually known, sometimes known, expected due to patterns in closures, not known, or no answer). (true or false)"
@@ -40,17 +40,17 @@ data,households.rda,estimated_non_dw_storage_capacity,double,estimated capacity 
 data,households.rda,estimated_stored_non_dw,double,estimated actual storage of non-drinking water (liters)
 data,waterpoints.rda,id,integer,identification number
 data,waterpoints.rda,community,factor,"the communities surveyed, options including [1] kg: Korle Gonno and [2] abuja: Abuja"
-data,waterpoints.rda,type,factor,"water point type,options including [1] piped_water, [2] borehole, [3] public_bath, and [4]natural_spring."
+data,waterpoints.rda,type,factor,"water point type,options including [1] piped_water, [2] borehole, [3] public_bath, and [4] natural_spring."
 data,waterpoints.rda,available_services,factor,"services available at water point, options including (bathing, public sale of water, toilet, or comination of these)"
-data,waterpoints.rda,location,factor,"location of the water point, options including [1]within_a_compound or [2]on_the_street: outside compound adjacent to street."
+data,waterpoints.rda,location,factor,"location of the water point, options including [1] within_a_compound or [2] on_the_street: outside compound adjacent to street."
 data,waterpoints.rda,year_established,integer,year established
 data,waterpoints.rda,owner,factor,"owner, options including [1] household_head, [2] household_member, [3] community_member: community member outside household, and [4] multiple_community_members: multiple community members outside household"
-data,waterpoints.rda,constructor,factor,"type of constructor, options including [1]government or [2]community_member."
+data,waterpoints.rda,constructor,factor,"type of constructor, options including [1] government or [2] community_member."
 data,waterpoints.rda,managers,factor,"type of typical manager(s) of water point, options including household head or member(s), employee(s), self managed by customers, or combination of these)"
 data,waterpoints.rda,estimated_storage_capacity_liters,double,estimated storage capacity in liters
 data,waterpoints.rda,average_visits_per_customer,double,average number of daily visits per customer
 data,waterpoints.rda,respondent_would_use_to_prepare_rice,logical,"respondent would use this water to prepare rice, based on its quality (true or false)"
-data,waterpoints.rda,perception_of_quality,character,"respondent's perception of water quality, options including [1]acceptable, [2]high, and [3]low."
+data,waterpoints.rda,perception_of_quality,factor,"respondent's perception of water quality, options including [1] acceptable, [2] high, and [3] low."
 data,waterpoints.rda,tap_closure_days_per_week,double,typical number of tap closures per week
 data,waterpoints.rda,price_25_liter_jug,double,current price of 25-liter jug of water (cedis)
 data,waterpoints.rda,price_20_liter_bucket,double,current price of 20-liter bucket of water (cedis)
@@ -59,7 +59,7 @@ data,waterpoints.rda,avg_price_per_liter_cedis,double,"average price per liter, 
 data,waterpoints.rda,tap_closure_changes,factor,"typical dynamics of water point management during closure (increasing prices, water point likely to close due to low storage, bathing customers have less water than when taps are flowing)"
 data,waterpoints.rda,flexible_pricing,logical,manager adjusts price depending on amount of water needed or familiarity or need of customer (true or false)
 data,waterpoints.rda,price_increase,logical,price of any volume of water has increased in the last year (true or false)
-data,waterpoints.rda,CBT_sample_source,factor,"source of sample for compartment bag test (CBT) supplied by Aquagenx (https://www.aquagenx.com/cbt-ectc/), options including [1] indirect_from_tap_(traveled_through_hose), [2] other_storage_(traveled_through_hose_or_poured_through_container), [3]storage_tank, and [4]tap."
+data,waterpoints.rda,CBT_sample_source,factor,"source of sample for compartment bag test (CBT) supplied by Aquagenx (https://www.aquagenx.com/cbt-ectc/), options including [1] indirect_from_tap_(traveled_through_hose), [2] other_storage_(traveled_through_hose_or_poured_through_container), [3] storage_tank, and [4] tap."
 data,waterpoints.rda,coli_mpn,double,results of E. Coli most probable number (MPN) test per 100 mL sample
 data,waterpoints.rda,coli_mpn_ci,double,results of E. Coli most probable number (MPN) test per 100 mL sample - upper 95% confidence interval (CI)
 data,waterpoints.rda,coli_mpn_health_risk,factor,"results of E. Coli most probable number (MPN) test per 100 mL sample - descriptive health risk, options including [1]possibly_safe, [2]possibly_unsafe, [3]probably_saf, [4]probably_unsafe, [5] safe, [6]unsafe."

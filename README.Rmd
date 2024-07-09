@@ -77,16 +77,26 @@ The package provides access to household water costs, coping mechanisms as well 
 library(watercostaccra)
 ```
 
-The `households` data set contains data about a household survey on water costs and coping strategies in Accra. It has `r nrow(households)` observations and `r ncol(households)` variables. The `waterpoints` data set contains data about a water point survey conducted in Accra as well. It has `r nrow(waterpoints)` observations and `r ncol(waterpoints)` variables. For an overview of the variable names, see the following table.
-
+The `households` data set contains data about a household survey on water costs and coping strategies in Accra. It has `r nrow(households)` observations and `r ncol(households)` variables. 
 ```{r echo=FALSE, message=FALSE, warning=FALSE}
 readr::read_csv("data-raw/dictionary.csv") |>
   dplyr::filter(file_name == "households.rda") |>
   dplyr::select(variable_name:description) |> 
   knitr::kable() |> 
-  kableExtra::kable_styling("striped")
+  kableExtra::kable_styling("striped") |>
+   kableExtra::scroll_box(height = "400px")
 ```
 
+The `waterpoints` data set contains data about a water point survey conducted in Accra as well. It has `r nrow(waterpoints)` observations and `r ncol(waterpoints)` variables. For an overview of the variable names, see the following table.
+observations and `r ncol(households)` variables. 
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+readr::read_csv("data-raw/dictionary.csv") |>
+  dplyr::filter(file_name == "waterpoints.rda") |>
+  dplyr::select(variable_name:description) |> 
+  knitr::kable() |> 
+  kableExtra::kable_styling("striped") |>
+   kableExtra::scroll_box(height = "400px")
+```
 ## Example
 
 Here is an example illustrating health risks associated with the water samples collected in Accra.
