@@ -48,21 +48,20 @@ library(watercostaccra)
 
 The `households` data set contains data about a household survey on
 water costs and coping strategies in Accra. It has 116 observations and
-89 variables. The `waterpoints` data set contains data about a water
-point survey conducted in Accra as well. It has 49 observations and 30
-variables. For an overview of the variable names, see the following
-table.
+89 variables.
+
+<div style="border: 1px solid #ddd; padding: 0px; overflow-y: scroll; height:400px; ">
 
 <table class="table table-striped" style="margin-left: auto; margin-right: auto;">
 <thead>
 <tr>
-<th style="text-align:left;">
+<th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;">
 variable_name
 </th>
-<th style="text-align:left;">
+<th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;">
 variable_type
 </th>
-<th style="text-align:left;">
+<th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;">
 description
 </th>
 </tr>
@@ -126,7 +125,7 @@ and \[2\] male
 tenure
 </td>
 <td style="text-align:left;">
-character
+factor
 </td>
 <td style="text-align:left;">
 tenure status, options including \[1\] rented: renter, \[2\] owned:
@@ -197,10 +196,10 @@ respondent-owned and \[2\] household-owned
 business_location
 </td>
 <td style="text-align:left;">
-character
+factor
 </td>
 <td style="text-align:left;">
-location type of the business, options including \[1\]home_based, \[2\]
+location type of the business, options including \[1\] home_based, \[2\]
 outside_home: fixed location outside home, or \[3\] mobile: mobile
 location.
 </td>
@@ -210,7 +209,7 @@ location.
 business_category
 </td>
 <td style="text-align:left;">
-character
+factor
 </td>
 <td style="text-align:left;">
 type of business, options including \[1\] food, \[2\] shop, \[3\] salon,
@@ -430,12 +429,12 @@ difficulty in accessing water) (true or false)
 time_of_last_struggle_to_find_water
 </td>
 <td style="text-align:left;">
-character
+factor
 </td>
 <td style="text-align:left;">
 respondent’s last time of struggle to find water, options including
 \[1\] last_3_days, \[2\] last_7_days, \[3\] last_30_days, \[4\]
-last_year, and \[5\]over_year_ago.
+last_year, and \[5\] over_year_ago.
 </td>
 </tr>
 <tr>
@@ -563,6 +562,371 @@ estimated actual storage of non-drinking water (liters)
 </tbody>
 </table>
 
+</div>
+
+The `waterpoints` data set contains data about a water point survey
+conducted in Accra as well. It has 49 observations and 30 variables. For
+an overview of the variable names, see the following table. observations
+and 89 variables.
+
+<div style="border: 1px solid #ddd; padding: 0px; overflow-y: scroll; height:400px; ">
+
+<table class="table table-striped" style="margin-left: auto; margin-right: auto;">
+<thead>
+<tr>
+<th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;">
+variable_name
+</th>
+<th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;">
+variable_type
+</th>
+<th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;">
+description
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+id
+</td>
+<td style="text-align:left;">
+integer
+</td>
+<td style="text-align:left;">
+identification number
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+community
+</td>
+<td style="text-align:left;">
+factor
+</td>
+<td style="text-align:left;">
+the communities surveyed, options including \[1\] kg: Korle Gonno and
+\[2\] abuja: Abuja
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+type
+</td>
+<td style="text-align:left;">
+factor
+</td>
+<td style="text-align:left;">
+water point type,options including \[1\] piped_water, \[2\] borehole,
+\[3\] public_bath, and \[4\] natural_spring.
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+available_services
+</td>
+<td style="text-align:left;">
+factor
+</td>
+<td style="text-align:left;">
+services available at water point, options including (bathing, public
+sale of water, toilet, or comination of these)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+location
+</td>
+<td style="text-align:left;">
+factor
+</td>
+<td style="text-align:left;">
+location of the water point, options including \[1\] within_a_compound
+or \[2\] on_the_street: outside compound adjacent to street.
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+year_established
+</td>
+<td style="text-align:left;">
+integer
+</td>
+<td style="text-align:left;">
+year established
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+owner
+</td>
+<td style="text-align:left;">
+factor
+</td>
+<td style="text-align:left;">
+owner, options including \[1\] household_head, \[2\] household_member,
+\[3\] community_member: community member outside household, and \[4\]
+multiple_community_members: multiple community members outside household
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+constructor
+</td>
+<td style="text-align:left;">
+factor
+</td>
+<td style="text-align:left;">
+type of constructor, options including \[1\] government or \[2\]
+community_member.
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+managers
+</td>
+<td style="text-align:left;">
+factor
+</td>
+<td style="text-align:left;">
+type of typical manager(s) of water point, options including household
+head or member(s), employee(s), self managed by customers, or
+combination of these)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+estimated_storage_capacity_liters
+</td>
+<td style="text-align:left;">
+double
+</td>
+<td style="text-align:left;">
+estimated storage capacity in liters
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+average_visits_per_customer
+</td>
+<td style="text-align:left;">
+double
+</td>
+<td style="text-align:left;">
+average number of daily visits per customer
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+respondent_would_use_to_prepare_rice
+</td>
+<td style="text-align:left;">
+logical
+</td>
+<td style="text-align:left;">
+respondent would use this water to prepare rice, based on its quality
+(true or false)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+perception_of_quality
+</td>
+<td style="text-align:left;">
+factor
+</td>
+<td style="text-align:left;">
+respondent’s perception of water quality, options including \[1\]
+acceptable, \[2\] high, and \[3\] low.
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+tap_closure_days_per_week
+</td>
+<td style="text-align:left;">
+double
+</td>
+<td style="text-align:left;">
+typical number of tap closures per week
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+price_25_liter_jug
+</td>
+<td style="text-align:left;">
+double
+</td>
+<td style="text-align:left;">
+current price of 25-liter jug of water (cedis)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+price_20_liter_bucket
+</td>
+<td style="text-align:left;">
+double
+</td>
+<td style="text-align:left;">
+current price of 20-liter bucket of water (cedis)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+price_30_liter_basin
+</td>
+<td style="text-align:left;">
+double
+</td>
+<td style="text-align:left;">
+current price of 30-liter basin of water (cedis)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+avg_price_per_liter_cedis
+</td>
+<td style="text-align:left;">
+double
+</td>
+<td style="text-align:left;">
+average price per liter, calculated by averaging price per liter of
+known prices (cedis)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+tap_closure_changes
+</td>
+<td style="text-align:left;">
+factor
+</td>
+<td style="text-align:left;">
+typical dynamics of water point management during closure (increasing
+prices, water point likely to close due to low storage, bathing
+customers have less water than when taps are flowing)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+flexible_pricing
+</td>
+<td style="text-align:left;">
+logical
+</td>
+<td style="text-align:left;">
+manager adjusts price depending on amount of water needed or familiarity
+or need of customer (true or false)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+price_increase
+</td>
+<td style="text-align:left;">
+logical
+</td>
+<td style="text-align:left;">
+price of any volume of water has increased in the last year (true or
+false)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+CBT_sample_source
+</td>
+<td style="text-align:left;">
+factor
+</td>
+<td style="text-align:left;">
+source of sample for compartment bag test (CBT) supplied by Aquagenx
+(<https://www.aquagenx.com/cbt-ectc/>), options including \[1\]
+indirect_from_tap\_(traveled_through_hose), \[2\]
+other_storage\_(traveled_through_hose_or_poured_through_container),
+\[3\] storage_tank, and \[4\] tap.
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+coli_mpn
+</td>
+<td style="text-align:left;">
+double
+</td>
+<td style="text-align:left;">
+results of E. Coli most probable number (MPN) test per 100 mL sample
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+coli_mpn_ci
+</td>
+<td style="text-align:left;">
+double
+</td>
+<td style="text-align:left;">
+results of E. Coli most probable number (MPN) test per 100 mL sample -
+upper 95% confidence interval (CI)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+coli_mpn_health_risk
+</td>
+<td style="text-align:left;">
+factor
+</td>
+<td style="text-align:left;">
+results of E. Coli most probable number (MPN) test per 100 mL sample -
+descriptive health risk, options including \[1\]possibly_safe,
+\[2\]possibly_unsafe, \[3\]probably_saf, \[4\]probably_unsafe, \[5\]
+safe, \[6\]unsafe.
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+tc_mpn
+</td>
+<td style="text-align:left;">
+double
+</td>
+<td style="text-align:left;">
+results of Total Coliforms (TC) most probable number (MPN) test per 100
+mL sample
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+tc_mpn_ci
+</td>
+<td style="text-align:left;">
+double
+</td>
+<td style="text-align:left;">
+results of Total Coliforms (TC) most probable number (MPN) test per 100
+mL sample - upper 95% confidence interval (CI)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+tc_mpn_health_risk
+</td>
+<td style="text-align:left;">
+factor
+</td>
+<td style="text-align:left;">
+results of Total Coliforms (TC) most probable number (MPN) test per 100
+mL sample - descriptive health risk, options including \[1\]unsafe,
+\[2\]possibly_unsafe, and \[3\]probably_unsafe.
+</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+
 ## Example
 
 Here is an example illustrating health risks associated with the water
@@ -601,7 +965,7 @@ ggplot(count_data, aes(x = community, y = count, fill = health_risk)) +
   theme_minimal()
 ```
 
-<img src="man/figures/README-unnamed-chunk-5-1.png" width="100%" style="display: block; margin: auto;" />
+<img src="man/figures/README-unnamed-chunk-6-1.png" width="100%" style="display: block; margin: auto;" />
 
 ## License
 
