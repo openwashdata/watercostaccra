@@ -43,7 +43,13 @@ households <- household_data |>
                                 package_type_preference),
                               as.factor)) |>
   dplyr::mutate(dplyr::across(starts_with("business_"), as.factor)) |>
-  dplyr::mutate(business_water_use = as.logical(business_water_use))
+  dplyr::mutate(business_water_use = as.logical(business_water_use)) |>
+  # neither the household nor respondent has a business
+  dplyr::mutate(business_ownership = case_when(business_ownership == "no" ~ NA)) |>
+  dplyr::mutate(time_of_last_struggle_to_find_water =
+                  factor(time_of_last_struggle_to_find_water,
+                         levels = c("over_year_ago", "last_year",
+                                    "last_30_days", "last_7_days", "last_3_days")))
 
 
 
@@ -79,12 +85,30 @@ waterpoint_data <- waterpoint_data |>
 
 # Modify variable types
 waterpoints <- waterpoint_data |>
+  dplyr::mutate(coli_mpn_health_risk = case_match(coli_mpn_health_risk,
+                                                  "probably_safe" ~ "possibly_safe",
+                                                  "probably_unsafe" ~ "possibly_unsafe")) |>
+  dplyr::mutate(tc_mpn_health_risk = case_match(tc_mpn_health_risk,
+                                                "probably_safe" ~ "possibly_safe",
+                                                "probably_unsafe" ~ "possibly_unsafe")) |>
   dplyr::mutate(across(c(community, type, available_services,
                          location, owner, constructor, managers,
                          respondent_would_use_to_prepare_rice, perception_of_quality,
                          tap_closure_changes, CBT_sample_source, coli_mpn_health_risk,
                          tc_mpn_health_risk),
-                       as.factor))
+                       as.factor)) |>
+  # reorder nominal categorical variables
+  dplyr::mutate(perception_of_quality = factor(perception_of_quality, levels = c("low", "acceptable", "high"))) |>
+  ## The classifications were created by the company that made the test.
+  ## company's instructions for use (https://assets.ctfassets.net/vcps67yikf8u/5IbwfssqfSWqCo0U88GCAw/4ef1a9606f22cba7d79705ba3d096956/CBT_Instructions_EN.pdf)
+
+  dplyr::mutate(coli_mpn_health_risk = factor(coli_mpn_health_risk,
+                                              levels = c("safe", "possibly_safe", "possibly_unsafe", "unsafe"))) |>
+  dplyr::mutate(tc_mpn_health_risk = factor(tc_mpn_health_risk,
+                                              levels = c("safe", "possibly_safe", "possibly_unsafe", "unsafe")))
+
+
+
 # Export Data ------------------------------------------------------------------
 usethis::use_data(households, overwrite = TRUE)
 usethis::use_data(waterpoints, overwrite = TRUE)
