@@ -31,7 +31,18 @@ knitr::opts_chunk$set(
 
 <!-- badges: end -->
 
-The goal of watercostaccra is to provide users with documentation on two surveys on household water costs, coping mechanisms as well as water point estimates conducted in November 2023 in Accra, Ghana. The data sets are associated with the following [project report](https://ds4owd-001.github.io/project-efvicario/) completed by Elizabeth Vicario for the ["data science for openwashdata" course](https://ds4owd-001.github.io/website/) offered by [openwashdata.org](https://openwashdata.org/).
+The goal of these datasets is to provide users with results from two
+surveys, the first asking questions on household water costs and coping
+mechanisms, the second characterizing each available water point.
+Surveys were conducted from October-November 2023 in two communities in
+Accra, Ghana (Korle Gonno and Abuja CBD). The survey was conducted in
+partnership with the University of Ghana and with funding from the
+Fulbright US Student Program. The data sets are associated with the
+following [project
+report](https://ds4owd-001.github.io/project-efvicario/) completed by
+Elizabeth Vicario for the ["data science for openwashdata"
+course](https://ds4owd-001.github.io/website/) offered by
+[openwashdata.org](https://openwashdata.org/).
 
 ## Installation
 
@@ -43,8 +54,8 @@ You can install the development version of watercostaccra from
 devtools::install_github("openwashdata/watercostaccra")
 ```
 
-Alternatively, you can download the individual data sets as a CSV or XLSX
-file from the table below.
+Alternatively, you can download the individual data sets as a CSV or
+XLSX file from the table below.
 
 ```{r, echo=FALSE, message=FALSE, warning=FALSE}
 library(dplyr)
@@ -71,13 +82,17 @@ read_csv("data-raw/dictionary.csv") |>
 
 ## Data
 
-The package provides access to household water costs, coping mechanisms as well as water point estimates.
+The package provides access to household water costs, coping mechanisms
+as well as water point estimates.
 
 ```{r}
 library(watercostaccra)
 ```
 
-The `households` data set contains data about a household survey on water costs and coping strategies in Accra. It has `r nrow(households)` observations and `r ncol(households)` variables. 
+The `households` data set contains data about a household survey on
+water costs and coping strategies in Accra. It has `r nrow(households)`
+observations and `r ncol(households)` variables.
+
 ```{r echo=FALSE, message=FALSE, warning=FALSE}
 readr::read_csv("data-raw/dictionary.csv") |>
   dplyr::filter(file_name == "households.rda") |>
@@ -87,8 +102,12 @@ readr::read_csv("data-raw/dictionary.csv") |>
    kableExtra::scroll_box(height = "400px")
 ```
 
-The `waterpoints` data set contains data about a water point survey conducted in Accra as well. It has `r nrow(waterpoints)` observations and `r ncol(waterpoints)` variables. For an overview of the variable names, see the following table.
-observations and `r ncol(households)` variables. 
+The `waterpoints` data set contains data about a water point survey
+conducted in Accra as well. It has `r nrow(waterpoints)` observations
+and `r ncol(waterpoints)` variables. For an overview of the variable
+names, see the following table. observations and `r ncol(households)`
+variables.
+
 ```{r echo=FALSE, message=FALSE, warning=FALSE}
 readr::read_csv("data-raw/dictionary.csv") |>
   dplyr::filter(file_name == "waterpoints.rda") |>
@@ -97,9 +116,11 @@ readr::read_csv("data-raw/dictionary.csv") |>
   kableExtra::kable_styling("striped") |>
    kableExtra::scroll_box(height = "400px")
 ```
+
 ## Example
 
-Here is an example illustrating health risks associated with the water samples collected in Accra.
+Here is an example illustrating health risks associated with the water
+samples collected in Accra.
 
 ```{r}
 library(watercostaccra)
@@ -135,12 +156,10 @@ ggplot(count_data, aes(x = community, y = count, fill = health_risk)) +
 
 ```
 
-
 ## License
 
 Data are available as
 [CC-BY](https://github.com/openwashdata/watercostaccra/blob/main/LICENSE.md).
-
 
 ## Citation
 
