@@ -2,10 +2,10 @@ Package: watercostaccra
 Title: Household water costs and coping strategies data from metropolitan Accra
 Version: 0.0.0.9000
 Authors@R: c(
-    person("Margaux", "Götschmann", , "margauxg@ethz.ch", role = c("aut", "cre"),
-           comment = c(ORCID = "0009-0002-2567-3343")),
     person("Elizabeth", "Vicario", , "efv@usf.edu", role = "aut",
            comment = c(ORCID = "0009-0000-6081-2076")),
+    person("Margaux", "Götschmann", , "margauxg@ethz.ch", role = c("aut", "cre"),
+           comment = c(ORCID = "0009-0002-2567-3343")),
     person("Betty Avanu", "Davidson", , "badavidson@st.ug.edu.gh", role = "aut",
            comment = c(ORCID = "0009-0006-9594-4048")),
     person("Ebenezer F.", "Amankwaa", , "efamankwaa@ug.edu.gh", role = "aut",

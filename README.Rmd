@@ -28,7 +28,7 @@ knitr::opts_chunk$set(
 
 [![License: CC BY
 4.0](https://img.shields.io/badge/License-CC_BY_4.0-pink.svg)](https://creativecommons.org/licenses/by/4.0/)
-
+[![R-CMD-check](https://github.com/openwashdata/watercostaccra/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/openwashdata/watercostaccra/actions/workflows/R-CMD-check.yaml)
 <!-- badges: end -->
 
 The goal of watercostaccra is to provide users with documentation on two surveys on household water costs, coping mechanisms as well as water point estimates conducted in November 2023 in Accra, Ghana. The data sets are associated with the following [project report](https://ds4owd-001.github.io/project-efvicario/) completed by Elizabeth Vicario for the ["data science for openwashdata" course](https://ds4owd-001.github.io/website/) offered by [openwashdata.org](https://openwashdata.org/).

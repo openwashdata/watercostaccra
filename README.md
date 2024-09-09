@@ -981,17 +981,21 @@ citation("watercostaccra")
 #> To cite package 'watercostaccra' in publications use:
 #> 
 #>   Götschmann M, Vicario E, Davidson B, Amankwaa E, Zhong M (2024).
-#>   _watercostaccra: Household water costs and coping strategies data
-#>   from metropolitan Accra_. R package version 0.0.0.9000,
+#>   "watercostaccra: Household water costs and coping strategies data
+#>   from metropolitan Accra." doi:10.5281/zenodo.6470427
+#>   <https://doi.org/10.5281/zenodo.6470427>,
 #>   <https://github.com/openwashdata/watercostaccra>.
 #> 
 #> A BibTeX entry for LaTeX users is
 #> 
-#>   @Manual{,
+#>   @Misc{gotschmann_etall:2024,
 #>     title = {watercostaccra: Household water costs and coping strategies data from metropolitan Accra},
 #>     author = {Margaux Götschmann and Elizabeth Vicario and Betty Avanu Davidson and Ebenezer F. Amankwaa and Mian Zhong},
 #>     year = {2024},
-#>     note = {R package version 0.0.0.9000},
+#>     doi = {10.5281/zenodo.6470427},
 #>     url = {https://github.com/openwashdata/watercostaccra},
+#>     abstract = {A household survey on water costs and coping strategies as well as a water point survey were conducted in two low-income communities in metropolitan Accra. These are Korle Gonno, a larger, well-planned coastal area with over 35 household water vendors, and Abuja, a small, densely packed, extralegal settlement with 15 water vendor and bathhouse businesses.},
+#>     keywords = {accra,ghana,household-surveys,open-data,openwashdata,r,water-cost},
+#>     version = {0.0.0.9000},
 #>   }
 ```

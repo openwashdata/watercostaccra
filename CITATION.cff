@@ -1,0 +1,54 @@
+# --------------------------------------------
+# CITATION file created with {cffr} R package
+# See also: https://docs.ropensci.org/cffr/
+# --------------------------------------------
+
+cff-version: 1.2.0
+message: 'To cite package "watercostaccra" in publications use:'
+type: software
+license: CC-BY-4.0
+title: 'watercostaccra: Household water costs and coping strategies data from metropolitan
+  Accra'
+version: 0.0.0.9000
+abstract: A household survey on water costs and coping strategies as well as a water
+  point survey were conducted in two low-income communities in metropolitan Accra.
+  These are Korle Gonno, a larger, well-planned coastal area with over 35 household
+  water vendors, and Abuja, a small, densely packed, extralegal settlement with 15
+  water vendor and bathhouse businesses.
+authors:
+- family-names: Vicario
+  given-names: Elizabeth
+  email: efv@usf.edu
+  orcid: https://orcid.org/0009-0000-6081-2076
+- family-names: Götschmann
+  given-names: Margaux
+  email: margauxg@ethz.ch
+  orcid: https://orcid.org/0009-0002-2567-3343
+- family-names: Davidson
+  given-names: Betty Avanu
+  email: badavidson@st.ug.edu.gh
+  orcid: https://orcid.org/0009-0006-9594-4048
+- family-names: Amankwaa
+  given-names: Ebenezer F.
+  email: efamankwaa@ug.edu.gh
+  orcid: https://orcid.org/0000-0002-8735-2521
+- family-names: Zhong
+  given-names: Mian
+  email: mzhong@ethz.ch
+  orcid: https://orcid.org/0009-0009-4546-7214
+repository-code: https://github.com/openwashdata/watercostaccra
+url: https://github.com/openwashdata/watercostaccra
+contact:
+- family-names: Götschmann
+  given-names: Margaux
+  email: margauxg@ethz.ch
+  orcid: https://orcid.org/0009-0002-2567-3343
+keywords:
+- accra
+- ghana
+- household-surveys
+- open-data
+- openwashdata
+- r
+- water-cost
+
