@@ -1,9 +1,8 @@
-pandoc: 3.1.11
-pkgdown: 2.0.7
+pandoc: '3.2'
+pkgdown: 2.1.1
 pkgdown_sha: ~
 articles: {}
-last_built: 2024-09-09T05:29Z
+last_built: 2024-10-23T08:12Z
 urls:
   reference: https://github.com/openwashdata/watercostaccra/reference
   article: https://github.com/openwashdata/watercostaccra/articles
-

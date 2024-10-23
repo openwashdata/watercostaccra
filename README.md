@@ -7,7 +7,8 @@
 
 [![License: CC BY
 4.0](https://img.shields.io/badge/License-CC_BY_4.0-pink.svg)](https://creativecommons.org/licenses/by/4.0/)
-
+[![R-CMD-check](https://github.com/openwashdata/watercostaccra/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/openwashdata/watercostaccra/actions/workflows/R-CMD-check.yaml)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.13981225.svg)](https://zenodo.org/doi/10.5281/zenodo.13981225)
 <!-- badges: end -->
 
 The goal of watercostaccra is to provide users with documentation on two
@@ -32,9 +33,9 @@ devtools::install_github("openwashdata/watercostaccra")
 Alternatively, you can download the individual data sets as a CSV or
 XLSX file from the table below.
 
-| dataset     | CSV                                                                                                  | XLSX                                                                                                   |
-|:------------|:-----------------------------------------------------------------------------------------------------|:-------------------------------------------------------------------------------------------------------|
-| households  | [Download CSV](https://github.com/openwashdata/watercostaccra/raw/main/inst/extdata/households.csv)  | [Download XLSX](https://github.com/openwashdata/watercostaccra/raw/main/inst/extdata/households.xlsx)  |
+| dataset | CSV | XLSX |
+|:---|:---|:---|
+| households | [Download CSV](https://github.com/openwashdata/watercostaccra/raw/main/inst/extdata/households.csv) | [Download XLSX](https://github.com/openwashdata/watercostaccra/raw/main/inst/extdata/households.xlsx) |
 | waterpoints | [Download CSV](https://github.com/openwashdata/watercostaccra/raw/main/inst/extdata/waterpoints.csv) | [Download XLSX](https://github.com/openwashdata/watercostaccra/raw/main/inst/extdata/waterpoints.xlsx) |
 
 ## Data
@@ -880,9 +881,8 @@ factor
 </td>
 <td style="text-align:left;">
 results of E. Coli most probable number (MPN) test per 100 mL sample -
-descriptive health risk, options including \[1\]possibly_safe,
-\[2\]possibly_unsafe, \[3\]probably_saf, \[4\]probably_unsafe, \[5\]
-safe, \[6\]unsafe.
+descriptive health risk, options including options including \[1\]safe,
+\[2\]possibly_safe, \[3\] possibly_unsafe and \[4\]unsafe.
 </td>
 </tr>
 <tr>
@@ -918,8 +918,8 @@ factor
 </td>
 <td style="text-align:left;">
 results of Total Coliforms (TC) most probable number (MPN) test per 100
-mL sample - descriptive health risk, options including \[1\]unsafe,
-\[2\]possibly_unsafe, and \[3\]probably_unsafe.
+mL sample - descriptive health risk, options including \[1\]safe,
+\[2\]possibly_safe, \[3\] possibly_unsafe and \[4\]unsafe.
 </td>
 </tr>
 </tbody>
@@ -980,19 +980,19 @@ Please cite this package using:
 citation("watercostaccra")
 #> To cite package 'watercostaccra' in publications use:
 #> 
-#>   Götschmann M, Vicario E, Davidson B, Amankwaa E, Zhong M (2024).
+#>   Vicario E, Götschmann M, Davidson B, Amankwaa E, Zhong M (2024).
 #>   "watercostaccra: Household water costs and coping strategies data
-#>   from metropolitan Accra." doi:10.5281/zenodo.6470427
-#>   <https://doi.org/10.5281/zenodo.6470427>,
+#>   from metropolitan Accra." doi:10.5281/zenodo.13981225
+#>   <https://doi.org/10.5281/zenodo.13981225>,
 #>   <https://github.com/openwashdata/watercostaccra>.
 #> 
 #> A BibTeX entry for LaTeX users is
 #> 
-#>   @Misc{gotschmann_etall:2024,
+#>   @Misc{vicario_etall:2024,
 #>     title = {watercostaccra: Household water costs and coping strategies data from metropolitan Accra},
-#>     author = {Margaux Götschmann and Elizabeth Vicario and Betty Avanu Davidson and Ebenezer F. Amankwaa and Mian Zhong},
+#>     author = {Elizabeth Vicario and Margaux Götschmann and Betty Avanu Davidson and Ebenezer F. Amankwaa and Mian Zhong},
 #>     year = {2024},
-#>     doi = {10.5281/zenodo.6470427},
+#>     doi = {10.5281/zenodo.13981225},
 #>     url = {https://github.com/openwashdata/watercostaccra},
 #>     abstract = {A household survey on water costs and coping strategies as well as a water point survey were conducted in two low-income communities in metropolitan Accra. These are Korle Gonno, a larger, well-planned coastal area with over 35 household water vendors, and Abuja, a small, densely packed, extralegal settlement with 15 water vendor and bathhouse businesses.},
 #>     keywords = {accra,ghana,household-surveys,open-data,openwashdata,r,water-cost},
