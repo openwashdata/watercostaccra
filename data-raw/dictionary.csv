@@ -62,7 +62,7 @@ data,waterpoints.rda,price_increase,logical,price of any volume of water has inc
 data,waterpoints.rda,CBT_sample_source,factor,"source of sample for compartment bag test (CBT) supplied by Aquagenx (https://www.aquagenx.com/cbt-ectc/), options including [1] indirect_from_tap_(traveled_through_hose), [2] other_storage_(traveled_through_hose_or_poured_through_container), [3] storage_tank, and [4] tap."
 data,waterpoints.rda,coli_mpn,double,results of E. Coli most probable number (MPN) test per 100 mL sample
 data,waterpoints.rda,coli_mpn_ci,double,results of E. Coli most probable number (MPN) test per 100 mL sample - upper 95% confidence interval (CI)
-data,waterpoints.rda,coli_mpn_health_risk,factor,"results of E. Coli most probable number (MPN) test per 100 mL sample - descriptive health risk, options including [1]possibly_safe, [2]possibly_unsafe, [3]probably_saf, [4]probably_unsafe, [5] safe, [6]unsafe."
+data,waterpoints.rda,coli_mpn_health_risk,factor,"results of E. Coli most probable number (MPN) test per 100 mL sample - descriptive health risk, options including options including [1]safe, [2]possibly_safe, [3] possibly_unsafe and [4]unsafe."
 data,waterpoints.rda,tc_mpn,double,results of Total Coliforms (TC) most probable number (MPN) test per 100 mL sample
 data,waterpoints.rda,tc_mpn_ci,double,results of Total Coliforms (TC) most probable number (MPN) test per 100 mL sample - upper 95% confidence interval (CI)
-data,waterpoints.rda,tc_mpn_health_risk,factor,"results of Total Coliforms (TC) most probable number (MPN) test per 100 mL sample - descriptive health risk, options including [1]unsafe, [2]possibly_unsafe, and [3]probably_unsafe."
+data,waterpoints.rda,tc_mpn_health_risk,factor,"results of Total Coliforms (TC) most probable number (MPN) test per 100 mL sample - descriptive health risk, options including [1]safe, [2]possibly_safe, [3] possibly_unsafe and [4]unsafe."
