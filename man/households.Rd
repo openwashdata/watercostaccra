@@ -7,37 +7,37 @@
 \format{
 A tibble with 116 rows and 39 variables
 \describe{
-\item{community}{the communities surveyed, options including \link{1} kg: Korle Gonno and \link{2} abuja: Abuja}
-\item{housing_type}{housing type, options includin \link{1} block_unit: unit in a row of apartments made of cement blocks, \link{2} wood_unit: unit in a row of apartments made of wood, \link{3} house, \link{4} compound_house: single-story L- or C-shaped house with a multiple units around a shared courtyard, \link{5} multistory_apt: multi-story apartment building, \link{6} wood_shack: wooden shack, \link{7} no_structure, and \link{8} other}
-\item{respondent_relationship_to_hh}{respondent's relationship to the household head (respondent identified), options including \link{1} self, \link{2} child, \link{3} spouse, and \link{4} other_relative}
-\item{gender}{gender (self-identified) of respondent, options including \link{1} female and \link{2} male}
-\item{tenure}{tenure status, options including \link{1} rented: renter, \link{2} owned: homeowner, or \link{3} no_payment: living without payment)}
+\item{community}{the communities surveyed, options including \code{1} kg: Korle Gonno and \code{2} abuja: Abuja}
+\item{housing_type}{housing type, options includin \code{1} block_unit: unit in a row of apartments made of cement blocks, \code{2} wood_unit: unit in a row of apartments made of wood, \code{3} house, \code{4} compound_house: single-story L- or C-shaped house with a multiple units around a shared courtyard, \code{5} multistory_apt: multi-story apartment building, \code{6} wood_shack: wooden shack, \code{7} no_structure, and \code{8} other}
+\item{respondent_relationship_to_hh}{respondent's relationship to the household head (respondent identified), options including \code{1} self, \code{2} child, \code{3} spouse, and \code{4} other_relative}
+\item{gender}{gender (self-identified) of respondent, options including \code{1} female and \code{2} male}
+\item{tenure}{tenure status, options including \code{1} rented: renter, \code{2} owned: homeowner, or \code{3} no_payment: living without payment)}
 \item{years_in_community}{number of years respondent has lived in community}
 \item{adult_count}{number of adults in household including respondent. Household is described as those "eating from the same pot"}
 \item{child_count}{number of children under 18 in household. Household is described as those "eating from the same pot"}
 \item{rooms_in_hh}{number of rooms used for sleeping. Household is described as those "eating from the same pot"}
-\item{business_ownership}{household or respondent owns a business, options including \link{1} respondent-owned and \link{2} household-owned}
-\item{business_location}{location type of the business, options including \link{1}home_based, \link{2} outside_home: fixed location outside home, or \link{3} mobile: mobile location.}
-\item{business_category}{type of business, options including \link{1} food, \link{2} shop, \link{3} salon, \link{4} vented_water, \link{5} tailoring, and \link{6} other_services.}
+\item{business_ownership}{household or respondent owns a business, options including \code{1} respondent-owned and \code{2} household-owned}
+\item{business_location}{location type of the business, options including \code{1} home_based, \code{2} outside_home: fixed location outside home, or \code{3} mobile: mobile location.}
+\item{business_category}{type of business, options including \code{1} food, \code{2} shop, \code{3} salon, \code{4} vented_water, \code{5} tailoring, and \code{6} other_services.}
 \item{business_water_use}{respondent's business uses water beyond typical needs of household (true or false)}
 \item{business_water_source}{primary source of water for business use (packaged water, piped to home, piped to neighbor's home, piped to compound, commercial or public tap, borehole, dug well, spring water, delivered water)}
 \item{primary_dw_source}{primary source of drinking water (packaged water, piped to home, piped to neighbor's home, piped to compound, commercial or public tap, borehole, dug well, spring water, delivered water)}
 \item{dw_reason_x}{columns about respondent reasons for using drinking water source on convenience, affordability, availability, temperature, cleanliness, taste, habit or cultural norm, trustworthiness, health, other. (true or false)}
-\item{package_type_preference}{respondent typically purchases individual, options including \link{1}individual: sachets/packets/bottles, \link{2} bag: multipacks of these, or \link{3} both}
+\item{package_type_preference}{respondent typically purchases individual, options including \code{1}individual: sachets/packets/bottles, \code{2} bag: multipacks of these, or \code{3} both}
 \item{package_size_reason_x}{columns about reasons for purchasing preferred package type on storage space in home, cost effectiveness, temperature at time of purchase, availability of money, convenience, size needed for respondent or household, avoiding wasting water by purchasing only when needed. (true or false)}
-\item{dw_treatment}{treatment methods of water before drinking, options including \link{1}no_treatment, \link{2} boil, \link{3}boil;settle, \link{4} filter, and \link{5}settle}
-\item{primary_water_source}{primary water source for non-drinking water, options including \link{1}packaged water, \link{2}piped_to_home, \link{3}piped to neighbor's home, \link{4}piped to compound, \link{5}commercial or public tap, \link{6}borehole, \link{7}dug well, \link{8}spring water, and \link{9}delivered water)}
+\item{dw_treatment}{treatment methods of water before drinking, options including \code{1}no_treatment, \code{2} boil, \code{3}boil;settle, \code{4} filter, and \code{5}settle}
+\item{primary_water_source}{primary water source for non-drinking water, options including \code{1}packaged water, \code{2}piped_to_home, \code{3}piped to neighbor's home, \code{4}piped to compound, \code{5}commercial or public tap, \code{6}borehole, \code{7}dug well, \code{8}spring water, and \code{9} delivered water)}
 \item{primary_source_reason_x}{columns about reasons for using primary source of non-drinking water on proximity to home, convenience, affordability, availability, cleanliness, other. (true or false)}
 \item{other_non_dw_source_use}{respondent uses at least one source besides primary non-drinking water source (true or false)}
 \item{other_non_dw_sources_x}{columns about additional water source(s) for non-drinking water on packaged water, piped to home, piped to neighbor's home, piped to compound, commercial or public tap, borehole, dug well, spring water, delivered water. (true or false)}
 \item{secondary_source_reason_x}{columns about reason for using secondary source of non-drinking water (primary source is not available, primary source is not clean, primary source is crowded, availability of shower stalls, convenient location)}
-\item{tap_payment_mode}{respondent's mechanism for paying for piped water (all respondents use piped water as a primary or secondary source). Options include \link{1} pay_to_fetch: paying to fetch, \link{2} shares_bill: sharing or paying the whole bill, or \link{3} both (at different taps).}
+\item{tap_payment_mode}{respondent's mechanism for paying for piped water (all respondents use piped water as a primary or secondary source). Options include \code{1} pay_to_fetch: paying to fetch, \code{2} shares_bill: sharing or paying the whole bill, or \code{3} both (at different taps).}
 \item{daily_hh_water_cost_for_pay_to_fetch}{daily estimated cost of drinking water for respondent's household}
 \item{daily_hh_water_cost_phhm_for_pay_to_fetch}{daily estimated cost of drinking water for respondent's household per household member}
 \item{past_struggle_to_find_water}{respondent has struggled to find water before (defined as extreme difficulty in accessing water) (true or false)}
-\item{time_of_last_struggle_to_find_water}{respondent's last time of struggle to find water, options including \link{1} last_3_days, \link{2} last_7_days, \link{3} last_30_days, \link{4} last_year, and \link{5}over_year_ago.}
+\item{time_of_last_struggle_to_find_water}{respondent's last time of struggle to find water, options including \code{1} last_3_days, \code{2} last_7_days, \code{3} last_30_days, \code{4} last_year, and \code{5} over_year_ago.}
 \item{weekdays_struggle_to_find_water}{days in a week the respondent typically struggles to find or pay for water}
-\item{past_struggle_primary_reason}{primary reason for past struggles to find water, options including \link{1} availability: availability, \link{2} cost, and \link{3} distance: distance to nearest source.}
+\item{past_struggle_primary_reason}{primary reason for past struggles to find water, options including \code{1} availability: availability, \code{2} cost, and \code{3} distance: distance to nearest source.}
 \item{tap_closure_knowledge_x}{columns about respondent's knowledge about tap closures (usually known, sometimes known, expected due to patterns in closures, not known, or no answer). (true or false)}
 \item{coping_mechanism_x}{columns about strategies for coping with water shortage (spending more on the same amount of water, purchasing extra water to store at home, using another source, using packaged water for cooking, skipping cooking, using packaged water for bathing, skipping bathing, closing business due to water shortage, skipping laundry). (true or false)}
 \item{water_storage_drinking_water}{respondent typically stores drinking water at home (true or false)}
