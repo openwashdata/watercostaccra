@@ -76,8 +76,8 @@ community
 factor
 </td>
 <td style="text-align:left;">
-the communities surveyed, options including \[1\] kg: Korle Gonno and
-\[2\] abuja: Abuja
+the communities surveyed, options including `1` kg: Korle Gonno and `2`
+abuja: Abuja
 </td>
 </tr>
 <tr>
@@ -88,12 +88,12 @@ housing_type
 factor
 </td>
 <td style="text-align:left;">
-housing type, options includin \[1\] block_unit: unit in a row of
-apartments made of cement blocks, \[2\] wood_unit: unit in a row of
-apartments made of wood, \[3\] house, \[4\] compound_house: single-story
-L- or C-shaped house with a multiple units around a shared courtyard,
-\[5\] multistory_apt: multi-story apartment building, \[6\] wood_shack:
-wooden shack, \[7\] no_structure, and \[8\] other
+housing type, options includin `1` block_unit: unit in a row of
+apartments made of cement blocks, `2` wood_unit: unit in a row of
+apartments made of wood, `3` house, `4` compound_house: single-story L-
+or C-shaped house with a multiple units around a shared courtyard, `5`
+multistory_apt: multi-story apartment building, `6` wood_shack: wooden
+shack, `7` no_structure, and `8` other
 </td>
 </tr>
 <tr>
@@ -105,7 +105,7 @@ factor
 </td>
 <td style="text-align:left;">
 respondent’s relationship to the household head (respondent identified),
-options including \[1\] self, \[2\] child, \[3\] spouse, and \[4\]
+options including `1` self, `2` child, `3` spouse, and `4`
 other_relative
 </td>
 </tr>
@@ -117,8 +117,8 @@ gender
 factor
 </td>
 <td style="text-align:left;">
-gender (self-identified) of respondent, options including \[1\] female
-and \[2\] male
+gender (self-identified) of respondent, options including `1` female and
+`2` male
 </td>
 </tr>
 <tr>
@@ -129,8 +129,8 @@ tenure
 factor
 </td>
 <td style="text-align:left;">
-tenure status, options including \[1\] rented: renter, \[2\] owned:
-homeowner, or \[3\] no_payment: living without payment)
+tenure status, options including `1` rented: renter, `2` owned:
+homeowner, or `3` no_payment: living without payment)
 </td>
 </tr>
 <tr>
@@ -188,8 +188,8 @@ business_ownership
 factor
 </td>
 <td style="text-align:left;">
-household or respondent owns a business, options including \[1\]
-respondent-owned and \[2\] household-owned
+household or respondent owns a business, options including `1`
+respondent-owned and `2` household-owned
 </td>
 </tr>
 <tr>
@@ -200,8 +200,8 @@ business_location
 factor
 </td>
 <td style="text-align:left;">
-location type of the business, options including \[1\] home_based, \[2\]
-outside_home: fixed location outside home, or \[3\] mobile: mobile
+location type of the business, options including `1` home_based, `2`
+outside_home: fixed location outside home, or `3` mobile: mobile
 location.
 </td>
 </tr>
@@ -213,8 +213,8 @@ business_category
 factor
 </td>
 <td style="text-align:left;">
-type of business, options including \[1\] food, \[2\] shop, \[3\] salon,
-\[4\] vented_water, \[5\] tailoring, and \[6\] other_services.
+type of business, options including `1` food, `2` shop, `3` salon, `4`
+vented_water, `5` tailoring, and `6` other_services.
 </td>
 </tr>
 <tr>
@@ -278,8 +278,8 @@ factor
 </td>
 <td style="text-align:left;">
 respondent typically purchases individual, options including
-\[1\]individual: sachets/packets/bottles, \[2\] bag: multipacks of
-these, or \[3\] both
+`1`individual: sachets/packets/bottles, `2` bag: multipacks of these, or
+`3` both
 </td>
 </tr>
 <tr>
@@ -306,8 +306,7 @@ factor
 </td>
 <td style="text-align:left;">
 treatment methods of water before drinking, options including
-\[1\]no_treatment, \[2\] boil, \[3\]boil;settle, \[4\] filter, and
-\[5\]settle
+`1`no_treatment, `2` boil, `3`boil;settle, `4` filter, and `5`settle
 </td>
 </tr>
 <tr>
@@ -319,9 +318,9 @@ factor
 </td>
 <td style="text-align:left;">
 primary water source for non-drinking water, options including
-\[1\]packaged water, \[2\]piped_to_home, \[3\]piped to neighbor’s home,
-\[4\]piped to compound, \[5\]commercial or public tap, \[6\]borehole,
-\[7\]dug well, \[8\]spring water, and \[9\]delivered water)
+`1`packaged water, `2`piped_to_home, `3`piped to neighbor’s home,
+`4`piped to compound, `5`commercial or public tap, `6`borehole, `7`dug
+well, `8`spring water, and `9` delivered water)
 </td>
 </tr>
 <tr>
@@ -385,9 +384,9 @@ factor
 </td>
 <td style="text-align:left;">
 respondent’s mechanism for paying for piped water (all respondents use
-piped water as a primary or secondary source). Options include \[1\]
-pay_to_fetch: paying to fetch, \[2\] shares_bill: sharing or paying the
-whole bill, or \[3\] both (at different taps).
+piped water as a primary or secondary source). Options include `1`
+pay_to_fetch: paying to fetch, `2` shares_bill: sharing or paying the
+whole bill, or `3` both (at different taps).
 </td>
 </tr>
 <tr>
@@ -433,9 +432,9 @@ time_of_last_struggle_to_find_water
 factor
 </td>
 <td style="text-align:left;">
-respondent’s last time of struggle to find water, options including
-\[1\] last_3_days, \[2\] last_7_days, \[3\] last_30_days, \[4\]
-last_year, and \[5\] over_year_ago.
+respondent’s last time of struggle to find water, options including `1`
+last_3_days, `2` last_7_days, `3` last_30_days, `4` last_year, and `5`
+over_year_ago.
 </td>
 </tr>
 <tr>
@@ -458,8 +457,8 @@ past_struggle_primary_reason
 factor
 </td>
 <td style="text-align:left;">
-primary reason for past struggles to find water, options including \[1\]
-availability: availability, \[2\] cost, and \[3\] distance: distance to
+primary reason for past struggles to find water, options including `1`
+availability: availability, `2` cost, and `3` distance: distance to
 nearest source.
 </td>
 </tr>
@@ -606,8 +605,8 @@ community
 factor
 </td>
 <td style="text-align:left;">
-the communities surveyed, options including \[1\] kg: Korle Gonno and
-\[2\] abuja: Abuja
+the communities surveyed, options including `1` kg: Korle Gonno and `2`
+abuja: Abuja
 </td>
 </tr>
 <tr>
@@ -618,8 +617,8 @@ type
 factor
 </td>
 <td style="text-align:left;">
-water point type,options including \[1\] piped_water, \[2\] borehole,
-\[3\] public_bath, and \[4\] natural_spring.
+water point type,options including `1` piped_water, `2` borehole, `3`
+public_bath, and `4` natural_spring.
 </td>
 </tr>
 <tr>
@@ -642,8 +641,8 @@ location
 factor
 </td>
 <td style="text-align:left;">
-location of the water point, options including \[1\] within_a_compound
-or \[2\] on_the_street: outside compound adjacent to street.
+location of the water point, options including `1` within_a_compound or
+`2` on_the_street: outside compound adjacent to street.
 </td>
 </tr>
 <tr>
@@ -665,8 +664,8 @@ owner
 factor
 </td>
 <td style="text-align:left;">
-owner, options including \[1\] household_head, \[2\] household_member,
-\[3\] community_member: community member outside household, and \[4\]
+owner, options including `1` household_head, `2` household_member, `3`
+community_member: community member outside household, and `4`
 multiple_community_members: multiple community members outside household
 </td>
 </tr>
@@ -678,7 +677,7 @@ constructor
 factor
 </td>
 <td style="text-align:left;">
-type of constructor, options including \[1\] government or \[2\]
+type of constructor, options including `1` government or `2`
 community_member.
 </td>
 </tr>
@@ -737,8 +736,8 @@ perception_of_quality
 factor
 </td>
 <td style="text-align:left;">
-respondent’s perception of water quality, options including \[1\]
-acceptable, \[2\] high, and \[3\] low.
+respondent’s perception of water quality, options including `1`
+acceptable, `2` high, and `3` low.
 </td>
 </tr>
 <tr>
@@ -843,10 +842,10 @@ factor
 </td>
 <td style="text-align:left;">
 source of sample for compartment bag test (CBT) supplied by Aquagenx
-(<https://www.aquagenx.com/cbt-ectc/>), options including \[1\]
-indirect_from_tap\_(traveled_through_hose), \[2\]
-other_storage\_(traveled_through_hose_or_poured_through_container),
-\[3\] storage_tank, and \[4\] tap.
+(<https://www.aquagenx.com/cbt-ectc/>), options including `1`
+indirect_from_tap\_(traveled_through_hose), `2`
+other_storage\_(traveled_through_hose_or_poured_through_container), `3`
+storage_tank, and `4` tap.
 </td>
 </tr>
 <tr>
@@ -881,8 +880,8 @@ factor
 </td>
 <td style="text-align:left;">
 results of E. Coli most probable number (MPN) test per 100 mL sample -
-descriptive health risk, options including options including \[1\]safe,
-\[2\]possibly_safe, \[3\] possibly_unsafe and \[4\]unsafe.
+descriptive health risk, options including options including `1`safe,
+`2`possibly_safe, `3` possibly_unsafe and `4`unsafe.
 </td>
 </tr>
 <tr>
@@ -918,8 +917,8 @@ factor
 </td>
 <td style="text-align:left;">
 results of Total Coliforms (TC) most probable number (MPN) test per 100
-mL sample - descriptive health risk, options including \[1\]safe,
-\[2\]possibly_safe, \[3\] possibly_unsafe and \[4\]unsafe.
+mL sample - descriptive health risk, options including `1`safe,
+`2`possibly_safe, `3` possibly_unsafe and `4`unsafe.
 </td>
 </tr>
 </tbody>

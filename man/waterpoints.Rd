@@ -8,18 +8,18 @@
 A tibble with 49 rows and 28 variables
 \describe{
 \item{id}{identification number}
-\item{community}{the communities surveyed, options including \link{1} kg: Korle Gonno and \link{2} abuja: Abuja}
-\item{type}{water point type,options including \link{1} piped_water, \link{2} borehole, \link{3} public_bath, and \link{4}natural_spring.}
+\item{community}{the communities surveyed, options including \code{1} kg: Korle Gonno and \code{2} abuja: Abuja}
+\item{type}{water point type,options including \code{1} piped_water, \code{2} borehole, \code{3} public_bath, and \code{4} natural_spring.}
 \item{available_services}{services available at water point, options including (bathing, public sale of water, toilet, or comination of these)}
-\item{location}{location of the water point, options including \link{1}within_a_compound or \link{2}on_the_street: outside compound adjacent to street.}
+\item{location}{location of the water point, options including \code{1} within_a_compound or \code{2} on_the_street: outside compound adjacent to street.}
 \item{year_established}{year established}
-\item{owner}{owner, options including \link{1} household_head, \link{2} household_member, \link{3} community_member: community member outside household, and \link{4} multiple_community_members: multiple community members outside household}
-\item{constructor}{type of constructor, options including \link{1}government or \link{2}community_member.}
+\item{owner}{owner, options including \code{1} household_head, \code{2} household_member, \code{3} community_member: community member outside household, and \code{4} multiple_community_members: multiple community members outside household}
+\item{constructor}{type of constructor, options including \code{1} government or \code{2} community_member.}
 \item{managers}{type of typical manager(s) of water point, options including household head or member(s), employee(s), self managed by customers, or combination of these)}
 \item{estimated_storage_capacity_liters}{estimated storage capacity in liters}
 \item{average_visits_per_customer}{average number of daily visits per customer}
 \item{respondent_would_use_to_prepare_rice}{respondent would use this water to prepare rice, based on its quality (true or false)}
-\item{perception_of_quality}{respondent's perception of water quality, options including \link{1}acceptable, \link{2}high, and \link{3}low.}
+\item{perception_of_quality}{respondent's perception of water quality, options including \code{1} acceptable, \code{2} high, and \code{3} low.}
 \item{tap_closure_days_per_week}{typical number of tap closures per week}
 \item{price_25_liter_jug}{current price of 25-liter jug of water (cedis)}
 \item{price_20_liter_bucket}{current price of 20-liter bucket of water (cedis)}
@@ -28,13 +28,13 @@ A tibble with 49 rows and 28 variables
 \item{tap_closure_changes}{typical dynamics of water point management during closure (increasing prices, water point likely to close due to low storage, bathing customers have less water than when taps are flowing)}
 \item{flexible_pricing}{manager adjusts price depending on amount of water needed or familiarity or need of customer (true or false)}
 \item{price_increase}{price of any volume of water has increased in the last year (true or false)}
-\item{CBT_sample_source}{source of sample for compartment bag test (CBT) supplied by Aquagenx (https://www.aquagenx.com/cbt-ectc/), options including \link{1} indirect_from_tap_(traveled_through_hose), \link{2} other_storage_(traveled_through_hose_or_poured_through_container), \link{3}storage_tank, and \link{4}tap.}
+\item{CBT_sample_source}{source of sample for compartment bag test (CBT) supplied by Aquagenx (https://www.aquagenx.com/cbt-ectc/), options including \code{1} indirect_from_tap_(traveled_through_hose), \code{2} other_storage_(traveled_through_hose_or_poured_through_container), \code{3} storage_tank, and \code{4} tap.}
 \item{coli_mpn}{results of E. Coli most probable number (MPN) test per 100 mL sample}
 \item{coli_mpn_ci}{results of E. Coli most probable number (MPN) test per 100 mL sample - upper 95\% confidence interval (CI)}
-\item{coli_mpn_health_risk}{results of E. Coli most probable number (MPN) test per 100 mL sample - descriptive health risk, options including \link{1}possibly_safe, \link{2}possibly_unsafe, \link{3}probably_saf, \link{4}probably_unsafe, \link{5} safe, \link{6}unsafe.}
+\item{coli_mpn_health_risk}{results of E. Coli most probable number (MPN) test per 100 mL sample - descriptive health risk, options including options including \code{1}safe, \code{2}possibly_safe, \code{3} possibly_unsafe and \code{4}unsafe.}
 \item{tc_mpn}{results of Total Coliforms (TC) most probable number (MPN) test per 100 mL sample}
 \item{tc_mpn_ci}{results of Total Coliforms (TC) most probable number (MPN) test per 100 mL sample - upper 95\% confidence interval (CI)}
-\item{tc_mpn_health_risk}{results of Total Coliforms (TC) most probable number (MPN) test per 100 mL sample - descriptive health risk, options including \link{1}unsafe, \link{2}possibly_unsafe, and \link{3}probably_unsafe.}
+\item{tc_mpn_health_risk}{results of Total Coliforms (TC) most probable number (MPN) test per 100 mL sample - descriptive health risk, options including \code{1}safe, \code{2}possibly_safe, \code{3} possibly_unsafe and \code{4}unsafe.}
 }
 }
 \usage{
