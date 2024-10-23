@@ -1,6 +1,6 @@
 directory,file_name,variable_name,variable_type,description
 data,households.rda,community,factor,"the communities surveyed, options including `1` kg: Korle Gonno and `2` abuja: Abuja"
-data,households.rda,housing_type,factor,"housing type, options includin `1` block_unit: unit in a row of apartments made of cement blocks, `2` wood_unit: unit in a row of apartments made of wood, `3` house, `4` compound_house: single-story L- or C-shaped house with a multiple units around a shared courtyard, `5` multistory_apt: multi-story apartment building, `6` wood_shack: wooden shack, `7` no_structure, and `8` other"
+data,households.rda,housing_type,factor,"housing type, options including `1` block_unit: unit in a row of apartments made of cement blocks, `2` wood_unit: unit in a row of apartments made of wood, `3` house, `4` compound_house: single-story L- or C-shaped house with a multiple units around a shared courtyard, `5` multistory_apt: multi-story apartment building, `6` wood_shack: wooden shack, `7` no_structure, and `8` other"
 data,households.rda,respondent_relationship_to_hh,factor,"respondent's relationship to the household head (respondent identified), options including `1` self, `2` child, `3` spouse, and `4` other_relative"
 data,households.rda,gender,factor,"gender (self-identified) of respondent, options including `1` female and `2` male"
 data,households.rda,tenure,factor,"tenure status, options including `1` rented: renter, `2` owned: homeowner, or `3` no_payment: living without payment)"
