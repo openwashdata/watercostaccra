@@ -23,7 +23,7 @@ Depends:
     R (>= 2.10)
 LazyData: true
 Language: en-GB
-Config/Needs/website: rmarkdown
+Config/Needs/website: rmarkdown, dplyr, ggplot2, ggtext, gt, kableExtra, knitr, readr, stringr, tidyr
 Date: 2024-06-21
 URL: https://github.com/openwashdata/watercostaccra
 BugReports: https://github.com/openwashdata/watercostaccra/issues
