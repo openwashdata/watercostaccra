@@ -5,7 +5,7 @@
 \alias{waterpoints}
 \title{waterpoints: Water point survey data}
 \format{
-A tibble with 49 rows and 28 variables
+A tibble with 49 rows and 30 variables
 \describe{
 \item{id}{identification number}
 \item{community}{the communities surveyed, options including \code{1} kg: Korle Gonno and \code{2} abuja: Abuja}
@@ -13,7 +13,9 @@ A tibble with 49 rows and 28 variables
 \item{available_services}{services available at water point, options including (bathing, public sale of water, toilet, or comination of these)}
 \item{location}{location of the water point, options including \code{1} within_a_compound or \code{2} on_the_street: outside compound adjacent to street.}
 \item{year_established}{year established}
+\item{year_established_unknown}{year of establishment is unknown to the respondent (TRUE, otherwise NA)}
 \item{owner}{owner, options including \code{1} household_head, \code{2} household_member, \code{3} community_member: community member outside household, and \code{4} multiple_community_members: multiple community members outside household}
+\item{owner_na}{owner question not applicable (TRUE, otherwise NA)}
 \item{constructor}{type of constructor, options including \code{1} government or \code{2} community_member.}
 \item{managers}{type of typical manager(s) of water point, options including household head or member(s), employee(s), self managed by customers, or combination of these)}
 \item{estimated_storage_capacity_liters}{estimated storage capacity in liters}
