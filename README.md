@@ -2556,20 +2556,20 @@ citation("watercostaccra")
 #> To cite package 'watercostaccra' in publications use:
 #> 
 #>   Vicario E, Götschmann M, Davidson B, Amankwaa E, Zhong M, Schöbitz L
-#>   (2024). "watercostaccra: Household water costs and coping strategies
-#>   data from metropolitan Accra." doi:10.5281/zenodo.13981224
+#>   (2024). "watercostaccra: Household Water Costs and Coping Strategies,
+#>   Accra 2023." doi:10.5281/zenodo.13981224
 #>   <https://doi.org/10.5281/zenodo.13981224>.
 #>   <https://github.com/openwashdata/watercostaccra>.
 #> 
 #> A BibTeX entry for LaTeX users is
 #> 
 #>   @Misc{vicario_etall:2024,
-#>     title = {watercostaccra: Household water costs and coping strategies data from metropolitan Accra},
+#>     title = {watercostaccra: Household Water Costs and Coping Strategies, Accra 2023},
 #>     author = {Elizabeth Vicario and Margaux Götschmann and Betty Avanu Davidson and Ebenezer F. Amankwaa and Mian Zhong and Lars Schöbitz},
 #>     year = {2024},
 #>     doi = {10.5281/zenodo.13981224},
 #>     url = {https://github.com/openwashdata/watercostaccra},
-#>     abstract = {A household survey on water costs and coping strategies as well as a water point survey were conducted in two low-income communities in metropolitan Accra. These are Korle Gonno, a larger, well-planned coastal area with over 35 household water vendors, and Abuja, a small, densely packed, extralegal settlement with 15 water vendor and bathhouse businesses.},
+#>     abstract = {A household survey on water costs and coping strategies (116 households) and a water point survey (49 water points, with E. coli and total coliform test results) were conducted in October and November 2023 in two low-income communities in metropolitan Accra, Ghana. These are Korle Gonno, a larger, well-planned coastal area with over 35 household water vendors, and Abuja, a small, densely packed, extralegal settlement with 15 water vendor and bathhouse businesses.},
 #>     keywords = {open data,washdata,water costs,coping strategies,household survey,water points,water vendors,water quality,Accra,Ghana,accra,ghana,household-surveys,open-data,openwashdata,r,water-cost},
 #>     version = {0.0.0.9000},
 #>   }

@@ -1,5 +1,5 @@
 Package: watercostaccra
-Title: Household water costs and coping strategies data from metropolitan Accra
+Title: Household Water Costs and Coping Strategies, Accra 2023
 Version: 0.0.0.9000
 Authors@R: c(
     person("Elizabeth", "Vicario", , "efv@usf.edu", role = "aut",
@@ -15,7 +15,7 @@ Authors@R: c(
     person("Lars", "Schöbitz", , "lschoebitz@ethz.ch", role = "cre",
            comment = c(ORCID = "0000-0003-2196-5015"))
   )
-Description: A household survey on water costs and coping strategies as well as a water point survey were conducted in two low-income communities in metropolitan Accra. These are Korle Gonno, a larger, well-planned coastal area with over 35 household water vendors, and Abuja, a small, densely packed, extralegal settlement with 15 water vendor and bathhouse businesses.
+Description: A household survey on water costs and coping strategies (116 households) and a water point survey (49 water points, with E. coli and total coliform test results) were conducted in October and November 2023 in two low-income communities in metropolitan Accra, Ghana. These are Korle Gonno, a larger, well-planned coastal area with over 35 household water vendors, and Abuja, a small, densely packed, extralegal settlement with 15 water vendor and bathhouse businesses.
 License: CC BY 4.0
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
