@@ -1,4 +1,5 @@
 directory,file_name,variable_name,variable_type,description
+data,households.rda,id,double,identification number
 data,households.rda,community,factor,"the communities surveyed, options including `1` kg: Korle Gonno and `2` abuja: Abuja"
 data,households.rda,housing_type,factor,"housing type, options includin `1` block_unit: unit in a row of apartments made of cement blocks, `2` wood_unit: unit in a row of apartments made of wood, `3` house, `4` compound_house: single-story L- or C-shaped house with a multiple units around a shared courtyard, `5` multistory_apt: multi-story apartment building, `6` wood_shack: wooden shack, `7` no_structure, and `8` other"
 data,households.rda,respondent_relationship_to_hh,factor,"respondent's relationship to the household head (respondent identified), options including `1` self, `2` child, `3` spouse, and `4` other_relative"
@@ -14,15 +15,48 @@ data,households.rda,business_category,factor,"type of business, options includin
 data,households.rda,business_water_use,logical,respondent's business uses water beyond typical needs of household (true or false)
 data,households.rda,business_water_source,factor,"primary source of water for business use (packaged water, piped to home, piped to neighbor's home, piped to compound, commercial or public tap, borehole, dug well, spring water, delivered water)"
 data,households.rda,primary_dw_source,factor,"primary source of drinking water (packaged water, piped to home, piped to neighbor's home, piped to compound, commercial or public tap, borehole, dug well, spring water, delivered water)"
-data,households.rda,dw_reason_x,logical,"columns about respondent reasons for using drinking water source on convenience, affordability, availability, temperature, cleanliness, taste, habit or cultural norm, trustworthiness, health, other. (true or false)"
+data,households.rda,dw_reason_convenience,logical,respondent names convenience as a reason for using the drinking water source (true or false)
+data,households.rda,dw_reason_affordable,logical,respondent names affordability as a reason for using the drinking water source (true or false)
+data,households.rda,dw_reason_available,logical,respondent names availability as a reason for using the drinking water source (true or false)
+data,households.rda,dw_reason_cold,logical,respondent names temperature (cold water) as a reason for using the drinking water source (true or false)
+data,households.rda,dw_reason_clean,logical,respondent names cleanliness as a reason for using the drinking water source (true or false)
+data,households.rda,dw_reason_taste,logical,respondent names taste as a reason for using the drinking water source (true or false)
+data,households.rda,dw_reason_habit_or_cultural_norm,logical,respondent names habit or cultural norm as a reason for using the drinking water source (true or false)
+data,households.rda,dw_reason_trustworthy,logical,respondent names trustworthiness as a reason for using the drinking water source (true or false)
+data,households.rda,dw_reason_health,logical,respondent names health as a reason for using the drinking water source (true or false)
+data,households.rda,dw_reason_other,logical,respondent names another reason for using the drinking water source (true or false)
 data,households.rda,package_type_preference,factor,"respondent typically purchases individual, options including `1`individual: sachets/packets/bottles, `2` bag: multipacks of these, or `3` both"
-data,households.rda,package_size_reason_x,logical,"columns about reasons for purchasing preferred package type on storage space in home, cost effectiveness, temperature at time of purchase, availability of money, convenience, size needed for respondent or household, avoiding wasting water by purchasing only when needed. (true or false)"
+data,households.rda,package_size_reason_storage_space,logical,respondent names storage space in the home as a reason for purchasing the preferred package type (true or false)
+data,households.rda,package_size_reason_cost_effective,logical,respondent names cost effectiveness as a reason for purchasing the preferred package type (true or false)
+data,households.rda,package_size_reason_temperature,logical,respondent names temperature at the time of purchase as a reason for purchasing the preferred package type (true or false)
+data,households.rda,package_size_reason_available_money,logical,respondent names availability of money as a reason for purchasing the preferred package type (true or false)
+data,households.rda,package_size_reason_convenience,logical,respondent names convenience as a reason for purchasing the preferred package type (true or false)
+data,households.rda,package_size_reason_size,logical,respondent names the size needed for the respondent or household as a reason for purchasing the preferred package type (true or false)
+data,households.rda,package_size_reason_avoid_wasting_water,logical,respondent names avoiding wasting water by purchasing only when needed as a reason for purchasing the preferred package type (true or false)
 data,households.rda,dw_treatment,factor,"treatment methods of water before drinking, options including `1`no_treatment, `2` boil, `3`boil;settle, `4` filter, and `5`settle"
 data,households.rda,primary_water_source,factor,"primary water source for non-drinking water, options including `1`packaged water, `2`piped_to_home, `3`piped to neighbor's home, `4`piped to compound, `5`commercial or public tap, `6`borehole, `7`dug well, `8`spring water, and `9` delivered water)"
-data,households.rda,primary_source_reason_x,logical,"columns about reasons for using primary source of non-drinking water on proximity to home, convenience, affordability, availability, cleanliness, other. (true or false)"
+data,households.rda,primary_source_reason_proximity,logical,respondent names proximity to home as a reason for using the primary source of non-drinking water (true or false)
+data,households.rda,primary_source_reason_convenience,logical,respondent names convenience as a reason for using the primary source of non-drinking water (true or false)
+data,households.rda,primary_source_reason_affordable,logical,respondent names affordability as a reason for using the primary source of non-drinking water (true or false)
+data,households.rda,primary_source_reason_availability,logical,respondent names availability as a reason for using the primary source of non-drinking water (true or false)
+data,households.rda,primary_source_reason_cleanliness,logical,respondent names cleanliness as a reason for using the primary source of non-drinking water (true or false)
+data,households.rda,primary_source_reason_other,logical,respondent names another reason for using the primary source of non-drinking water (true or false)
 data,households.rda,other_non_dw_source_use,logical,respondent uses at least one source besides primary non-drinking water source (true or false)
-data,households.rda,other_non_dw_sources_x,logical,"columns about additional water source(s) for non-drinking water on packaged water, piped to home, piped to neighbor's home, piped to compound, commercial or public tap, borehole, dug well, spring water, delivered water. (true or false)"
-data,households.rda,secondary_source_reason_x,logical,"columns about reason for using secondary source of non-drinking water (primary source is not available, primary source is not clean, primary source is crowded, availability of shower stalls, convenient location)"
+data,households.rda,other_non_dw_sources_packaged,logical,respondent uses packaged water as an additional source of non-drinking water (true or false)
+data,households.rda,other_non_dw_sources_piped_to_home,logical,respondent uses water piped to home as an additional source of non-drinking water (true or false)
+data,households.rda,other_non_dw_sources_piped_to_neighbor,logical,respondent uses water piped to a neighbor's home as an additional source of non-drinking water (true or false)
+data,households.rda,other_non_dw_sources_commercial_tap,logical,respondent uses a commercial or public tap as an additional source of non-drinking water (true or false)
+data,households.rda,other_non_dw_sources_piped_to_compound,logical,respondent uses water piped to the compound as an additional source of non-drinking water (true or false)
+data,households.rda,other_non_dw_sources_borehole,logical,respondent uses a borehole as an additional source of non-drinking water (true or false)
+data,households.rda,other_non_dw_sources_dug_well,logical,respondent uses a dug well as an additional source of non-drinking water (true or false)
+data,households.rda,other_non_dw_sources_spring_water,logical,respondent uses spring water as an additional source of non-drinking water (true or false)
+data,households.rda,other_non_dw_sources_delivered_water,logical,respondent uses delivered water as an additional source of non-drinking water (true or false)
+data,households.rda,other_non_dw_sources_other,logical,respondent uses another source as an additional source of non-drinking water (true or false)
+data,households.rda,secondary_source_reason_availability,logical,respondent uses a secondary source of non-drinking water because the primary source is not available (true or false)
+data,households.rda,secondary_source_reason_unclean,logical,respondent uses a secondary source of non-drinking water because the primary source is not clean (true or false)
+data,households.rda,secondary_source_reason_crowding,logical,respondent uses a secondary source of non-drinking water because the primary source is crowded (true or false)
+data,households.rda,secondary_source_reason_shower,logical,respondent uses a secondary source of non-drinking water because shower stalls are available (true or false)
+data,households.rda,secondary_source_reason_convenient_location,logical,respondent uses a secondary source of non-drinking water because of its convenient location (true or false)
 data,households.rda,tap_payment_mode,factor,"respondent's mechanism for paying for piped water (all respondents use piped water as a primary or secondary source). Options include `1` pay_to_fetch: paying to fetch, `2` shares_bill: sharing or paying the whole bill, or `3` both (at different taps)."
 data,households.rda,daily_hh_water_cost_for_pay_to_fetch,double,daily estimated cost of drinking water for respondent's household
 data,households.rda,daily_hh_water_cost_phhm_for_pay_to_fetch,double,daily estimated cost of drinking water for respondent's household per household member
@@ -30,12 +64,28 @@ data,households.rda,past_struggle_to_find_water,logical,respondent has struggled
 data,households.rda,time_of_last_struggle_to_find_water,factor,"respondent's last time of struggle to find water, options including `1` last_3_days, `2` last_7_days, `3` last_30_days, `4` last_year, and `5` over_year_ago."
 data,households.rda,weekdays_struggle_to_find_water,double,days in a week the respondent typically struggles to find or pay for water
 data,households.rda,past_struggle_primary_reason,factor,"primary reason for past struggles to find water, options including `1` availability: availability, `2` cost, and `3` distance: distance to nearest source."
-data,households.rda,tap_closure_knowledge_x,logical,"columns about respondent's knowledge about tap closures (usually known, sometimes known, expected due to patterns in closures, not known, or no answer). (true or false)"
-data,households.rda,coping_mechanism_x,logical,"columns about strategies for coping with water shortage (spending more on the same amount of water, purchasing extra water to store at home, using another source, using packaged water for cooking, skipping cooking, using packaged water for bathing, skipping bathing, closing business due to water shortage, skipping laundry). (true or false)"
+data,households.rda,tap_closure_knowledge_known,logical,respondent's knowledge about tap closures: usually known (true or false)
+data,households.rda,tap_closure_knowledge_sometimes,logical,respondent's knowledge about tap closures: sometimes known (true or false)
+data,households.rda,tap_closure_knowledge_expected_pattern,logical,respondent's knowledge about tap closures: expected due to patterns in closures (true or false)
+data,households.rda,tap_closure_knowledge_unknown,logical,respondent's knowledge about tap closures: not known (true or false)
+data,households.rda,tap_closure_knowledge_no_answer,logical,respondent's knowledge about tap closures: no answer (true or false)
+data,households.rda,coping_mechanism_spend_more,logical,respondent copes with water shortage by spending more on the same amount of water (true or false)
+data,households.rda,coping_mechanism_purchase_more_to_store_at_home,logical,respondent copes with water shortage by purchasing extra water to store at home (true or false)
+data,households.rda,coping_mechanism_use_other_source,logical,respondent copes with water shortage by using another source (true or false)
+data,households.rda,coping_mechanism_sachet_to_cook,logical,respondent copes with water shortage by using packaged water for cooking (true or false)
+data,households.rda,coping_mechanism_skipped_cooking,logical,respondent copes with water shortage by skipping cooking (true or false)
+data,households.rda,coping_mechanism_sachet_to_bathe,logical,respondent copes with water shortage by using packaged water for bathing (true or false)
+data,households.rda,coping_mechanism_skipped_bathing,logical,respondent copes with water shortage by skipping bathing (true or false)
+data,households.rda,coping_mechanism_closed_business,logical,respondent copes with water shortage by closing the business (true or false)
+data,households.rda,coping_mechanism_skipped_laundry,logical,respondent copes with water shortage by skipping laundry (true or false)
 data,households.rda,water_storage_drinking_water,logical,respondent typically stores drinking water at home (true or false)
 data,households.rda,water_storage_non_drinking_water,logical,respondent typically stores non-drinking water at home (true or false)
 data,households.rda,water_storage_none,logical,respondent typically does not store water at home (true or false)
-data,households.rda,storage_containers_x,logical,"columns about if respondent typically stores non-drinking water, types of storage containers (plastic jugs also called jerry cans or Kufuor gallons, uncovered or covered barrels, other covered or uncovered containers)"
+data,households.rda,storage_containers_plastic_jug,logical,respondent stores non-drinking water in plastic jugs (jerry cans or Kufuor gallons) (true or false)
+data,households.rda,storage_containers_uncovered_barrels,logical,respondent stores non-drinking water in uncovered barrels (true or false)
+data,households.rda,storage_containers_covered_barrels,logical,respondent stores non-drinking water in covered barrels (true or false)
+data,households.rda,storage_containers_other_covered,logical,respondent stores non-drinking water in other covered containers (true or false)
+data,households.rda,storage_containers_other_uncovered,logical,respondent stores non-drinking water in other uncovered containers (true or false)
 data,households.rda,estimated_non_dw_storage_capacity,double,estimated capacity of storage for non-drinking water (liters)
 data,households.rda,estimated_stored_non_dw,double,estimated actual storage of non-drinking water (liters)
 data,waterpoints.rda,id,integer,identification number
@@ -44,7 +94,9 @@ data,waterpoints.rda,type,factor,"water point type,options including `1` piped_w
 data,waterpoints.rda,available_services,factor,"services available at water point, options including (bathing, public sale of water, toilet, or comination of these)"
 data,waterpoints.rda,location,factor,"location of the water point, options including `1` within_a_compound or `2` on_the_street: outside compound adjacent to street."
 data,waterpoints.rda,year_established,integer,year established
+data,waterpoints.rda,year_established_unknown,logical,"year of establishment is unknown to the respondent (TRUE, otherwise NA)"
 data,waterpoints.rda,owner,factor,"owner, options including `1` household_head, `2` household_member, `3` community_member: community member outside household, and `4` multiple_community_members: multiple community members outside household"
+data,waterpoints.rda,owner_na,logical,"owner question not applicable (TRUE, otherwise NA)"
 data,waterpoints.rda,constructor,factor,"type of constructor, options including `1` government or `2` community_member."
 data,waterpoints.rda,managers,factor,"type of typical manager(s) of water point, options including household head or member(s), employee(s), self managed by customers, or combination of these)"
 data,waterpoints.rda,estimated_storage_capacity_liters,double,estimated storage capacity in liters

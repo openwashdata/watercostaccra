@@ -1,21 +1,21 @@
-# --------------------------------------------
-# CITATION file created with {cffr} R package
+# ------------------------------------------------
+# CITATION.cff file created with {cffr} R package
 # See also: https://docs.ropensci.org/cffr/
-# --------------------------------------------
+# ------------------------------------------------
  
 cff-version: 1.2.0
 message: 'To cite package "watercostaccra" in publications use:'
-type: software
+type: dataset
 license: CC-BY-4.0
-title: 'watercostaccra: Household water costs and coping strategies data from metropolitan
-  Accra'
+title: 'watercostaccra: Household Water Costs and Coping Strategies, Accra 2023'
 version: 0.0.0.9000
-doi: 10.5281/zenodo.13981225
-abstract: A household survey on water costs and coping strategies as well as a water
-  point survey were conducted in two low-income communities in metropolitan Accra.
-  These are Korle Gonno, a larger, well-planned coastal area with over 35 household
-  water vendors, and Abuja, a small, densely packed, extralegal settlement with 15
-  water vendor and bathhouse businesses.
+doi: 10.5281/zenodo.13981224
+abstract: A household survey on water costs and coping strategies (116 households)
+  and a water point survey (49 water points, with E. coli and total coliform test
+  results) were conducted in October and November 2023 in two low-income communities
+  in metropolitan Accra, Ghana. These are Korle Gonno, a larger, well-planned coastal
+  area with over 35 household water vendors, and Abuja, a small, densely packed, extralegal
+  settlement with 15 water vendor and bathhouse businesses.
 authors:
 - family-names: Vicario
   given-names: Elizabeth
@@ -37,15 +37,29 @@ authors:
   given-names: Mian
   email: mzhong@ethz.ch
   orcid: https://orcid.org/0009-0009-4546-7214
+- family-names: Schöbitz
+  given-names: Lars
+  email: lschoebitz@ethz.ch
+  orcid: https://orcid.org/0000-0003-2196-5015
 repository-code: https://github.com/openwashdata/watercostaccra
 url: https://github.com/openwashdata/watercostaccra
 date-released: '2024-06-21'
 contact:
-- family-names: Götschmann
-  given-names: Margaux
-  email: margauxg@ethz.ch
-  orcid: https://orcid.org/0009-0002-2567-3343
+- family-names: Schöbitz
+  given-names: Lars
+  email: lschoebitz@ethz.ch
+  orcid: https://orcid.org/0000-0003-2196-5015
 keywords:
+- open data
+- washdata
+- water costs
+- coping strategies
+- household survey
+- water points
+- water vendors
+- water quality
+- Accra
+- Ghana
 - accra
 - ghana
 - household-surveys
