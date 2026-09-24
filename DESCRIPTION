@@ -19,7 +19,6 @@ Description: A household survey on water costs and coping strategies as well as 
 License: CC BY 4.0
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
-RoxygenNote: 7.3.2
 Depends: 
     R (>= 2.10)
 LazyData: true
@@ -31,3 +30,4 @@ BugReports: https://github.com/openwashdata/watercostaccra/issues
 X-schema.org-keywords: open data, washdata, water costs, coping strategies, household survey, water points, water vendors, water quality, Accra, Ghana
 X-schema.org-spatialCoverage: Korle Gonno and Abuja, Accra, Ghana
 X-schema.org-temporalCoverage: 2023-10-05/2023-11-23
+Config/roxygen2/version: 8.0.0
