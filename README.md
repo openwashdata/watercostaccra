@@ -11,6 +11,8 @@
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.13981224.svg)](https://zenodo.org/doi/10.5281/zenodo.13981224)
 <!-- badges: end -->
 
+A data package published by [openwashdata](https://openwashdata.org).
+
 The goal of watercostaccra is to provide users with documentation on two
 surveys on household water costs, coping mechanisms as well as water
 point estimates conducted in October and November 2023 in Accra, Ghana.

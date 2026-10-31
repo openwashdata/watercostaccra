@@ -31,3 +31,13 @@ X-schema.org-keywords: open data, washdata, water costs, coping strategies, hous
 X-schema.org-spatialCoverage: Korle Gonno and Abuja, Accra, Ghana
 X-schema.org-temporalCoverage: 2023-10-05/2023-11-23
 Config/roxygen2/version: 8.0.0
+Config/washr/funding: This project was funded by the [Open Research Data Program of the ETH Board](https://ethrat.ch/en/eth-domain/open-research-data/).
+Config/washr/analytics-domain: openwashdata.github.io
+Config/washr/doi-provider: zenodo
+Config/washr/zenodo-community: openwashdata
+Config/washr/brand-source: openwashdata/brand
+Config/washr/publisher: Published by [openwashdata](https://openwashdata.org), a project of [Global Health Engineering](https://ghe.ethz.ch/) at ETH Zurich.
+Config/washr/home: https://openwashdata.org
+Config/washr/catalog: https://openwashdata.org/pages/gallery/data/
+Config/washr/community: This package is part of [openwashdata](https://openwashdata.org). Browse the [data catalogue](https://openwashdata.org/pages/gallery/data/) or get the [newsletter](https://openwashdata.org/pages/newsletter/).
+Config/washr/version: 1.2.1
