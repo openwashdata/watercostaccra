@@ -22,7 +22,7 @@ knitr::opts_chunk$set(
 )
 ```
 
-# watercostaccra
+# watercostaccra <a href="https://openwashdata.org"><img src="man/figures/logo.png" align="right" width="120" alt="openwashdata" /></a>
 
 <!-- badges: start -->
 
@@ -31,8 +31,6 @@ knitr::opts_chunk$set(
 [![R-CMD-check](https://github.com/openwashdata/watercostaccra/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/openwashdata/watercostaccra/actions/workflows/R-CMD-check.yaml)
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.13981224.svg)](https://zenodo.org/doi/10.5281/zenodo.13981224)
 <!-- badges: end -->
-
-A data package published by [openwashdata](https://openwashdata.org).
 
 The goal of watercostaccra is to provide users with documentation on two surveys on household water costs, coping mechanisms as well as water point estimates conducted in October and November 2023 in Accra, Ghana. The data sets are associated with the following [project report](https://ds4owd-001.github.io/project-efvicario/) completed by Elizabeth Vicario for the ["data science for openwashdata" course](https://ds4owd-001.github.io/website/) offered by [openwashdata.org](https://openwashdata.org/).
 
@@ -145,6 +143,8 @@ Data are available as
 
 
 ## Citation
+
+Published by openwashdata, <https://openwashdata.org>.
 
 Please cite this package using:
 

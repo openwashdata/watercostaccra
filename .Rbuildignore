@@ -9,3 +9,5 @@
 ^CITATION\.cff$
 ^\.github$
 ^CITATION.cff
+^_brand\.yml$
+^logos$
