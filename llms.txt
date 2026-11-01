@@ -1,7 +1,5 @@
 # watercostaccra
 
-A data package published by [openwashdata](https://openwashdata.org).
-
 The goal of watercostaccra is to provide users with documentation on two
 surveys on household water costs, coping mechanisms as well as water
 point estimates conducted in October and November 2023 in Accra, Ghana.
@@ -220,6 +218,8 @@ Data are available as
 [CC-BY](https://github.com/openwashdata/watercostaccra/blob/main/LICENSE.md).
 
 ## Citation
+
+Published by openwashdata, <https://openwashdata.org>.
 
 Please cite this package using:
 
